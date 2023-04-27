@@ -295,7 +295,7 @@ ul {
   width: 375px;
   left: 0px;
   top: 2437px;
-  padding: 20px 20px;
+  padding: 20px 60px;
   background-image: url("./Normal Button/Tertiary/Icons/Frame.png");
   background-repeat: no-repeat;
   background-position-x: 100%;
@@ -399,8 +399,12 @@ hr {
     height: 15vw;
   }
 
-  #headline {
+  #headline, #works, #about-myself {
     width: 100%;
+  }
+
+  hr {
+    margin-top: 60vw;
   }
 }
 
@@ -411,7 +415,22 @@ hr {
     height: 15vh;
   }
 
-  #headline {
+  #headline, #works, #about-myself {
     width: 100%;
+  }
+
+  #headline {
+    background-image: url("./Normal Button/Tertiary/Icons/Illustration-header.png");
+    background-size: 500px;
+  }
+
+  #about-myself {
+    padding-left: 20px;
+    padding-right: 29px;
+    background-image: url("./Normal Button/Tertiary/Icons/Frame\ \(1\).png")
+  }
+
+  hr {
+    margin-top: 60vh;
   }
 }
