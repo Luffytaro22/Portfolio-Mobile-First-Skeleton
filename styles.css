@@ -1,13 +1,23 @@
+* {
+  max-width: 1300px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   height: 48px;
-  width: calc(375px + 48px);
+  width: 423px;
   border-radius: 0px;
   position: absolute;
   left: 0px;
   right: 0px;
-  top: 44px;
+  top: 0px;
   bottom: 0px;
   background-color: #3C3A39;
+  z-index: 1;
 }
 
 ul {
@@ -61,7 +71,7 @@ ul li:last-child img {
   width: 375px;
   height: 390px;
   left: 0px;
-  top: 92px;
+  top: 48px;
   background-image: url("./Normal Button/Tertiary/Icons/background-image.png");
   background-repeat: no-repeat;
   background-position-x: 100%;
@@ -115,4 +125,30 @@ ul li:last-child img {
   width: 200px;
   height: 40px;
   color:#FFFFFF;
+}
+
+@media only screen and (min-width: 375px) {
+ header {
+  width: 100%;
+  padding-right: 3em;
+  height: 15vw;
+ }
+
+ #headline {
+  width: 100%;
+  align-items: center;
+ }
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    width: 100%;
+    padding-right: 3em;
+    height: 15vh;
+  }
+
+  #headline {
+   width: 100%;
+   align-items: flex-start;
+  }
 }
