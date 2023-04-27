@@ -10,20 +10,16 @@ body {
 header {
   height: 48px;
   width: 423px;
-  border-radius: 0px;
   position: absolute;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
-  background-color: #3C3A39;
+  background-color: #3c3a39;
   z-index: 1;
 }
 
 ul {
   list-style: none;
 }
-/* Logotype*/
+
+/* Logotype */
 ul li:first-child {
   display: flex;
   flex-direction: row;
@@ -32,7 +28,7 @@ ul li:first-child {
   width: 94px;
   height: 44px;
   left: 12px;
-  top: calc(50% - 44px/2);
+  top: calc(50% - 44px / 2);
 }
 
 ul li:first-child img {
@@ -40,7 +36,8 @@ ul li:first-child img {
   height: 34px;
   border-radius: 50%;
 }
-/*Icon Menu*/
+
+/* Icon Menu */
 ul li:last-child {
   display: flex;
   flex-direction: row;
@@ -50,7 +47,7 @@ ul li:last-child {
   width: 40px;
   height: 40px;
   right: 24px;
-  top: calc(50% - 40px/2);
+  top: calc(50% - 40px / 2);
   border-radius: 8px;
 }
 
@@ -60,7 +57,7 @@ ul li:last-child img {
 }
 
 #headline {
-  background: #1C1A19;
+  background: #1c1a19;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -70,7 +67,6 @@ ul li:last-child img {
   position: absolute;
   width: 375px;
   height: 390px;
-  left: 0px;
   top: 48px;
   background-image: url("./Normal Button/Tertiary/Icons/background-image.png");
   background-repeat: no-repeat;
@@ -81,27 +77,26 @@ ul li:last-child img {
 #headline h1 {
   width: 327px;
   height: 124px;
-  font-family: 'Crete Round';
+  font-family: Crete Round, Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.37px;
-  color: #FF6B00;
-  margin-bottom: 0;
+  color: #ff6b00;
 }
 
 #headline h3 {
   width: 327px;
   height: 27px;
-  font-family: 'Roboto';
+  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   display: flex;
   align-items: center;
-  color: #FFF5E1;
+  color: #fff5e1;
   margin-bottom: 0;
 }
 
@@ -113,7 +108,7 @@ ul li:last-child img {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 #headline .icons {
@@ -121,38 +116,39 @@ ul li:last-child img {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: 0px;
+  padding: 0;
   width: 200px;
   height: 40px;
-  color:#FFFFFF;
+  color:#ffffff;
 }
 
-#headline .icons:hover {
+#headline .icons :hover {
   cursor: pointer;
 }
 
 @media only screen and (min-width: 375px) {
- header {
-  width: 100%;
-  padding-right: 3em;
-  height: 15vw;
- }
-
- #headline {
-  width: 100%;
-  align-items: center;
- }
-}
-
-@media only screen and (min-width: 768px) {
   header {
     width: 100%;
     padding-right: 3em;
-    height: 15vh;
+    height: 15vw;
   }
 
   #headline {
-   width: 100%;
-   align-items: flex-start;
+    width: 100%;
+    align-items: center;
   }
 }
+
+@media only screen and (min-width: 768px) {
+    header {
+      width: 100%;
+      padding-right: 3em;
+      height: 15vh;
+    }
+
+    #headline {
+    width: 100%;
+    align-items: flex-start;
+    }
+}
+/* stylelint-disable-next-line rule */
