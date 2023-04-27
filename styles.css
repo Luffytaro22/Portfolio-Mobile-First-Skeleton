@@ -124,7 +124,7 @@ ul {
   margin-bottom: 0;
 }
 
-.icons:hover {
+.icons:hover, button:hover {
   cursor: pointer;
 }
 
