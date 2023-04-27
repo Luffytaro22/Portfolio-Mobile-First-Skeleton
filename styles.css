@@ -12,6 +12,11 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 header {
   height: 48px;
   width: 423px;
@@ -138,9 +143,116 @@ ul {
   flex: 1 1 auto;
 }
 
-a {
-  text-decoration: none;
-  color: white;
+#works {
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 120px 24px;
+  gap: 12px;
+  position: absolute;
+  width: 375px;
+  height: 390px;
+  top: 1200px;
+}
+
+#works h2, h3, p {
+  font-family: Crete Round;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+#works h2 {
+  color: #1c1a19;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+#works img {
+  width: 327px;
+  height: 237px;
+}
+
+#works h3 {
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
+
+#works p {
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+#works .languages {
+  display: flex;
+}
+
+#works .languages li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  width: 55px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #8993a4;
+}
+
+#works>a>button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 124px;
+  height: 48px;
+  background: #ff6b00;
+}
+
+#works .works-container {
+  display: grid;
+  grid-template-rows: repeat(2, 386px);
+  grid-template-columns: 327px;
+}
+
+#works .works-container .works {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("./Normal Button/Tertiary/Icons/Img\ Placeholder\ \(1\).png");
+  background-repeat: no-repeat;
+  
+}
+
+#works .works-container .works h2 {
+  font-family: Crete Round;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+#works .works-container .works p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+#works .works-container .works .lw {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  width: 67px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.24);
+  color: #fff;
 }
 
 @media only screen and (min-width: 375px) {
