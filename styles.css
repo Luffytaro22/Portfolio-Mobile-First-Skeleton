@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@200&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@200&family=Roboto&display=swap');
 
 * {
   max-width: 1300px;
@@ -191,16 +192,18 @@ ul {
   font-size: 16px;
   line-height: 24px;
   color: #091e42;
+  margin-bottom: 0;
 }
 
 #works .languages {
   display: flex;
-  column-gap: 20px;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: flex-start;
+  column-gap: 10px;
 }
 
-#works .languages li {
-  flex: 1 1 auto;
+#works .languages>* {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -218,6 +221,13 @@ ul {
   width: 124px;
   height: 48px;
   background: #ff6b00;
+  border: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
 }
 
 #works .works-container {
