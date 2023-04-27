@@ -45,7 +45,7 @@ ul {
 }
 
 /* Icon Menu */
-.ulMenu li:last-child {
+.nav-bar .menu-icon {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -58,7 +58,7 @@ ul {
   border-radius: 8px;
 }
 
-.ulMenu li:last-child i {
+.nav-bar i {
   color: white;
   font-size: 5vh;
 }
