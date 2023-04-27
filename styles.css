@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #fff;
 }
 
 a {
@@ -144,7 +145,6 @@ ul {
 }
 
 #works {
-  background-color: #e5e5e5;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -154,7 +154,8 @@ ul {
   position: absolute;
   width: 375px;
   height: 390px;
-  top: 1200px;
+  top: 1300px;
+  box-sizing: border-box;
 }
 
 #works h2, h3, p {
@@ -168,6 +169,8 @@ ul {
   color: #1c1a19;
   font-size: 40px;
   line-height: 52px;
+  border-bottom: 1px solid #212121;
+  padding-bottom: 30px;
 }
 
 #works img {
@@ -179,9 +182,11 @@ ul {
   font-size: 32px;
   line-height: 44px;
   color: #091e42;
+  margin-bottom: 0;
 }
 
 #works p {
+  margin-top: 0;
   font-family: Inter;
   font-size: 16px;
   line-height: 24px;
@@ -190,23 +195,24 @@ ul {
 
 #works .languages {
   display: flex;
+  column-gap: 20px;
+  justify-content: flex-start;
 }
 
 #works .languages li {
+  flex: 1 1 auto;
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding: 10px 12px;
   width: 55px;
   height: 40px;
   background: #fff;
   border: 1px solid #8993a4;
+  color: #091e42;
 }
 
 #works>a>button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   padding: 12px;
   gap: 10px;
   width: 124px;
@@ -221,9 +227,11 @@ ul {
 }
 
 #works .works-container .works {
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("./Normal Button/Tertiary/Icons/Img\ Placeholder\ \(1\).png");
+  background: url("./Normal Button/Tertiary/Icons/Img\ Placeholder\ \(1\).png");
   background-repeat: no-repeat;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 #works .works-container .works h2 {
@@ -233,6 +241,8 @@ ul {
   line-height: 44px;
   letter-spacing: 0em;
   text-align: left;
+  color: #fff;
+  padding: 0 10px;
 }
 
 #works .works-container .works p {
@@ -242,17 +252,27 @@ ul {
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
+  color: #fff;
+  padding: 0 12px;
 }
 
-#works .works-container .works .lw {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px 12px;
-  width: 67px;
-  height: 40px;
-  background: rgba(255, 255, 255, 0.24);
+#works .works-container .works .lw>* {
+  background-color: rgba(255, 255, 255, 0.24);
   color: #fff;
+}
+
+#works .works-container .works a>button {
+  width: 327px;
+  height: 48px;
+  background: #ff6B00;
+  border: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  
 }
 
 @media only screen and (min-width: 375px) {
