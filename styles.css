@@ -117,17 +117,21 @@ ul {
   font-size: 16px;
   line-height: 24px;
   color: #fff;
+  margin-bottom: 0;
 }
 
 #headline .icons {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: flex-start;
   padding: 0;
-  width: 200px;
-  height: 40px;
+  gap: 40px;
   color: #fff;
+}
+
+#headline .icons li {
+  flex: 1 1 auto;
 }
 
 a {
