@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@200&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@200&family=Roboto&display=swap');
 
 * {
@@ -11,7 +9,7 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 header {
@@ -121,6 +119,10 @@ ul {
   margin-bottom: 0;
 }
 
+.icons:hover {
+  cursor: pointer;
+}
+
 #headline .icons {
   display: flex;
   flex-direction: row;
@@ -139,10 +141,6 @@ ul {
 a {
   text-decoration: none;
   color: white;
-}
-
-.icons:hover {
-  cursor: pointer;
 }
 
 @media only screen and (min-width: 375px) {
