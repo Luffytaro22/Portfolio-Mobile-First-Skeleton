@@ -60,6 +60,7 @@ ul {
 
 .ulMenu li:last-child i {
   color: white;
+  font-size: 5vh;
 }
 
 #headline {
@@ -128,6 +129,7 @@ ul {
   padding: 0;
   gap: 40px;
   color: #fff;
+  font-size: 4vh;
 }
 
 #headline .icons li {
@@ -139,7 +141,7 @@ a {
   color: white;
 }
 
-#headline .icons:hover {
+.icons:hover {
   cursor: pointer;
 }
 
