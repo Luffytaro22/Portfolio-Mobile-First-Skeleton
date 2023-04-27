@@ -114,12 +114,17 @@ ul li:last-child img {
 #headline .icons {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
   padding: 0;
   width: 200px;
   height: 40px;
   color: #fff;
+}
+
+.icons a {
+  text-decoration: none;
+  color: white;
 }
 
 #headline .icons:hover {
