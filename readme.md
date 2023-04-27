@@ -25,9 +25,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Hello World <a name="about-project"></a>
+# 📖 Portfolio: setup and mobile first <a name="about-project"></a>
 
-**Hello World** is a simple page containing the text "Hello Microverse!".
+**Portfolio: setup and mobile first** is a layout for my future portfolio using Mobile First Responsive Desgin.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -45,7 +45,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://luffytaro22.github.io/Hello-world/)
+- [Live Demo Link](https://luffytaro22.github.io/Portfolio-Mobile-First-Skeleton/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
