@@ -1,17 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@200&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@200&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300&family=Meera+Inimai&family=Poppins:wght@200&family=Roboto&display=swap');
 
 * {
   max-width: 1300px;
+  color: #fff;
 }
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #fff;
 }
 
 a {
@@ -29,6 +26,7 @@ header {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 /* Logotype */
@@ -145,6 +143,7 @@ ul {
   flex: 1 1 auto;
 }
 
+/* works Section */
 #works {
   display: flex;
   flex-direction: column;
@@ -266,6 +265,10 @@ ul {
   padding: 0 12px;
 }
 
+#works .works-container .works .lw {
+  padding-left: 12px;
+}
+
 #works .works-container .works .lw>* {
   background-color: rgba(255, 255, 255, 0.24);
   color: #fff;
@@ -276,12 +279,116 @@ ul {
   height: 48px;
   background: #ff6B00;
   border: none;
-  font-family: 'Inter';
+  font-family: Inter;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: #fff;
+}
+
+/* About Myself Section */
+#about-myself {
+  background: #1C1A19;
+  position: absolute;
+  height: 1501px;
+  width: 375px;
+  left: 0px;
+  top: 2437px;
+  padding: 20px 20px;
+  background-image: url("./Normal Button/Tertiary/Icons/Frame.png");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 25%;
+}
+
+#about-myself h1 {
+  font-family: Crete Round;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 88px;
+  letter-spacing: 0.3700000047683716px;
+  text-align: left;
+  color: #ff6B00;
+  margin-bottom: 0;
+}
+
+#about-myself p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#about-myself a>button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 156px;
+  height: 48px;
+  background: #FF6B00;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  border: none;
+}
+
+hr {
+  margin-top: 200px;
+}
+
+#about-myself .container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-myself .container2 span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-myself label {
+  font-family: InaiMathi;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  gap: 50px;
+}
+
+#about-myself .container2 i {
+  color:  #ff6B00;
+  padding-right: 10px;
+}
+
+#about-myself .container2 .first {
+  transform: rotate(-45deg);
+}
+
+#about-myself .container2 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#about-myself .container2 ul>* {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
   
 }
 
