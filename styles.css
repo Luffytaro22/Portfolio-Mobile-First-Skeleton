@@ -256,6 +256,14 @@ button:hover {
   padding: 0 10px;
 }
 
+#about-myself > p {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 #works > .works-container > .works > p {
   font-family: Inter, sans-serif;
   font-size: 16px;
@@ -270,9 +278,38 @@ button:hover {
   padding-left: 12px;
 }
 
+#about-myself .container2 ul > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+}
+
 #works > .works-container > .works > .lw > * {
   background-color: rgba(255, 255, 255, 0.24);
   color: #fff;
+}
+
+#about-myself > a > button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 156px;
+  height: 48px;
+  background: #ff6b00;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  border: none;
 }
 
 #works > .works-container > .works > a > button {
@@ -295,7 +332,7 @@ button:hover {
   height: 1501px;
   width: 375px;
   top: 2437px;
-  padding: 20px 60px;
+  padding: 20px 24px;
   background-image: url("./Normal Button/Tertiary/Icons/Frame.png");
   background-repeat: no-repeat;
   background-position-x: 100%;
@@ -311,31 +348,6 @@ button:hover {
   text-align: left;
   color: #ff6b00;
   margin-bottom: 0;
-}
-
-#about-myself > p {
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-#about-myself > a > button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  gap: 10px;
-  width: 156px;
-  height: 48px;
-  background: #ff6b00;
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  border: none;
 }
 
 hr {
@@ -377,18 +389,6 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
-
-#about-myself .container2 ul > * {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 43px;
 }
 
 @media only screen and (min-width: 375px) {
