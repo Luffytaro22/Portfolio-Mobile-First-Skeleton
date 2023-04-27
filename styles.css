@@ -103,12 +103,12 @@ ul li:last-child img {
 #headline p {
   width: 327px;
   height: 123px;
-  font-family: 'Poppins';
+  font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #ffffff;
+  color: #fff;
 }
 
 #headline .icons {
@@ -119,10 +119,10 @@ ul li:last-child img {
   padding: 0;
   width: 200px;
   height: 40px;
-  color:#ffffff;
+  color:#fff;
 }
 
-#headline .icons :hover {
+#headline .icons:hover {
   cursor: pointer;
 }
 
@@ -140,15 +140,15 @@ ul li:last-child img {
 }
 
 @media only screen and (min-width: 768px) {
-    header {
-      width: 100%;
-      padding-right: 3em;
-      height: 15vh;
-    }
+  header {
+    width: 100%;
+    padding-right: 3em;
+    height: 15vh;
+  }
 
-    #headline {
+  #headline {
     width: 100%;
     align-items: flex-start;
-    }
+  }
 }
 /* stylelint-disable-next-line rule */
