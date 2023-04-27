@@ -127,6 +127,10 @@ ul li:last-child img {
   color:#FFFFFF;
 }
 
+#headline .icons:hover {
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 375px) {
  header {
   width: 100%;
