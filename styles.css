@@ -31,7 +31,7 @@ ul {
 }
 
 /* Logotype */
-.ulMenu > li:first-child {
+.ulMenu li:first-child {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -42,7 +42,7 @@ ul {
   top: calc(50% - 44px / 2);
 }
 
-.ulMenu > li:first-child > img {
+.ulMenu li:first-child > img {
   width: 8vh;
   height: 8vh;
   border-radius: 5px 5px 0 5px;
@@ -125,7 +125,7 @@ ul {
   margin-bottom: 0;
 }
 
-.icons:hover, 
+.icons:hover,
 button:hover {
   cursor: pointer;
 }
@@ -303,7 +303,7 @@ button:hover {
 }
 
 #about-myself > h1 {
-  font-family: Crete Round;
+  font-family: Crete Round, sans-serif;
   font-size: 72px;
   font-weight: 400;
   line-height: 88px;
@@ -314,7 +314,7 @@ button:hover {
 }
 
 #about-myself > p {
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -330,7 +330,7 @@ button:hover {
   width: 156px;
   height: 48px;
   background: #ff6b00;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -356,7 +356,7 @@ hr {
 }
 
 #about-myself > label {
-  font-family: InaiMathi;
+  font-family: InaiMathi, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -365,7 +365,7 @@ hr {
 }
 
 #about-myself > .container2 > i {
-  color: #ff6B00;
+  color: #ff6b00;
   padding-right: 10px;
 }
 
@@ -384,7 +384,7 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -398,8 +398,8 @@ hr {
     height: 15vw;
   }
 
-  #headline, 
-  #works, 
+  #headline,
+  #works,
   #about-myself {
     width: 100%;
   }
@@ -416,8 +416,8 @@ hr {
     height: 15vh;
   }
 
-  #headline, 
-  #works, 
+  #headline,
+  #works,
   #about-myself {
     width: 100%;
   }
