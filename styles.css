@@ -119,7 +119,7 @@ ul li:last-child img {
   padding: 0;
   width: 200px;
   height: 40px;
-  color:#fff;
+  color: #fff;
 }
 
 #headline .icons:hover {
@@ -150,5 +150,4 @@ ul li:last-child img {
     width: 100%;
     align-items: flex-start;
   }
-}
-/* stylelint-disable-next-line rule */
+}/* stylelint-disable-next-line rule */
