@@ -437,7 +437,7 @@ hr {
   }
 
   #works > .works-container {
-    grid-template-rows: repeat(3,386px);
+    grid-template-rows: repeat(3, 386px);
     grid-template-columns: repeat(3, 327px);
     gap: 10vw;
   }
