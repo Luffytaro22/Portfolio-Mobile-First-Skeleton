@@ -156,7 +156,7 @@ button:hover {
   position: absolute;
   width: 375px;
   height: 390px;
-  top: 1300px;
+  top: 2100px;
   box-sizing: border-box;
 }
 
@@ -234,8 +234,9 @@ button:hover {
 
 #works > .works-container {
   display: grid;
-  grid-template-rows: repeat(2, 386px);
+  grid-template-rows: repeat(6, 386px);
   grid-template-columns: 327px;
+  row-gap: 20px;
 }
 
 #works > .works-container > .works {
@@ -332,7 +333,7 @@ button:hover {
   position: absolute;
   height: 1501px;
   width: 375px;
-  top: 2437px;
+  top: 3937px;
   padding: 20px 24px;
   background-image: url("./Normal Button/Tertiary/Icons/Frame.png");
   background-repeat: no-repeat;
