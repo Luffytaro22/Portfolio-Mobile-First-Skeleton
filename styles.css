@@ -99,7 +99,7 @@ ul {
   line-height: 64px;
   letter-spacing: 0.37px;
   color: #ff6b00;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 #headline h3 {
@@ -140,6 +140,7 @@ button:hover {
   align-items: flex-start;
   justify-content: flex-start;
   padding: 0;
+  margin: 0;
   gap: 40px;
   color: #fff;
   font-size: 4vh;
@@ -458,6 +459,20 @@ hr {
   #headline {
     background-image: url("./Normal Button/Tertiary/Icons/Illustration-header.png");
     background-size: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5vw;
+  }
+
+  #headline p {
+    width: 50vw;
+  }
+
+  #headline .icons {
+    flex-direction: column;
+    order: -1;
   }
 
   #works > .works-container {
