@@ -375,7 +375,7 @@ hr {
   align-items: center;
 }
 
-#about-myself .container2 > span {
+#about-myself .container2 span {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -516,10 +516,20 @@ hr {
   }
 
   #about-myself {
-    padding-left: 20px;
-    padding-right: 29px;
     background-image: url("./Normal Button/Tertiary/Icons/Frame\ \(1\).png");
     top: 145em;
+    height: 210vh;
+  }
+
+  #about-myself div.container3 {
+    width: 40vw;
+  }
+
+  #about-myself div.container2 {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10vw;
   }
 
   hr {
