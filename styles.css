@@ -30,6 +30,10 @@ ul {
   padding: 0;
 }
 
+.menuHiden {
+  display: none;
+}
+
 /* Logotype */
 .ulMenu li:first-child {
   display: flex;
@@ -95,7 +99,7 @@ ul {
   line-height: 64px;
   letter-spacing: 0.37px;
   color: #ff6b00;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 #headline h3 {
@@ -136,6 +140,7 @@ button:hover {
   align-items: flex-start;
   justify-content: flex-start;
   padding: 0;
+  margin: 0;
   gap: 40px;
   color: #fff;
   font-size: 4vh;
@@ -217,7 +222,24 @@ button:hover {
   color: #091e42;
 }
 
-#works > a > button {
+#about-myself > a > button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 156px;
+  height: 48px;
+  background: #ff6b00;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  border: none;
+}
+
+#works div.works-container0 a > button {
   padding: 12px;
   gap: 10px;
   width: 124px;
@@ -297,23 +319,6 @@ button:hover {
   color: #fff;
 }
 
-#about-myself > a > button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  gap: 10px;
-  width: 156px;
-  height: 48px;
-  background: #ff6b00;
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  border: none;
-}
-
 #works > .works-container > .works > a > button {
   width: 327px;
   height: 48px;
@@ -370,7 +375,7 @@ hr {
   align-items: center;
 }
 
-#about-myself .container2 > span {
+#about-myself .container2 span {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -418,11 +423,32 @@ hr {
   }
 }
 
+/* For screen sizes of at least 768px */
 @media only screen and (min-width: 768px) {
   header {
     width: 100%;
     padding-right: 3em;
     height: 15vh;
+  }
+
+  .menuHiden {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+    gap: 50px;
+  }
+
+  .menuHiden > * {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  nav.nav-bar span.menu-icon {
+    display: none;
   }
 
   #headline,
@@ -434,23 +460,81 @@ hr {
   #headline {
     background-image: url("./Normal Button/Tertiary/Icons/Illustration-header.png");
     background-size: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5vw;
+  }
+
+  #headline p {
+    width: 50vw;
+  }
+
+  #headline .icons {
+    flex-direction: column;
+    order: -1;
   }
 
   #works > .works-container {
-    grid-template-rows: repeat(3, 386px);
-    grid-template-columns: repeat(3, 327px);
-    gap: 10vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #works div.works-container div.works > * {
+    width: 307px;
   }
 
   #works {
-    top: 100em;
+    top: 80em;
+    padding: 0 5vw;
+  }
+
+  #works h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  #works div.works-container0 {
+    display: flex;
+    align-items: flex-start;
+    gap: 5vw;
+  }
+
+  #works div.works-container0 img {
+    flex: 1;
+    height: 70vh;
+    width: 10vw;
+  }
+
+  #works div.works-container0 div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #works div.works-container0 div h3 {
+    margin: 0;
   }
 
   #about-myself {
-    padding-left: 20px;
-    padding-right: 29px;
     background-image: url("./Normal Button/Tertiary/Icons/Frame\ \(1\).png");
-    top: 150em;
+    top: 145em;
+    height: 210vh;
+  }
+
+  #about-myself div.container3 {
+    width: 40vw;
+  }
+
+  #about-myself div.container2 {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10vw;
   }
 
   hr {

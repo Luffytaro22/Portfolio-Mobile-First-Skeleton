@@ -15,14 +15,22 @@
             <ul class="ulMenu">
                 <li><a href=""><img src="./Normal Button/Tertiary/Icons/logo3.png" alt="My-Logo"></a></li>
             </ul>
+            <ul class="menuHiden">
+                <li><a href="#works-container">Portfolio</a></li>
+                <li><a href="#about-myself">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href=""><img src="./Normal Button/Icon - Mail.png" alt="Icon Mail"></a></li>
+            </ul>
             <span class="menu-icon"><i class="fa-solid fa-bars icons"></i></span>
         </nav>
     </header>
     <main>
         <section id="headline">
-            <h1>Hey There. I'm Manuel.</h1>
-            <h3>I'm a Software Developer.</h3>
-            <p>I'm doing my best to improve my habilities in building responsive web design projects. Any comment of this template is welcome.</p>
+            <div>
+                <h1>Hey There. I'm Manuel.</h1>
+                <h3>I'm a Software Developer.</h3>
+                <p>I'm doing my best to improve my habilities in building responsive web design projects. Any comment of this template is welcome.</p>
+            </div>
             <ul class="icons">
                 <li><a href="https://github.com/Luffytaro22" target="_blank" rel="noopener"><img src="./Normal Button/github.png" alt="Github-Icon"></a></li>
                 <li><a href="https://www.linkedin.com/in/manuel-alejandro-sanchez-sierra-4b358b14a/" target="_blank" rel="noopener"><img src="./Normal Button/Icon - Linkedin.png" alt="Linkedin-Icon"></a></li>
@@ -31,16 +39,20 @@
         </section>
         <section id="works">
             <h2>My Recent Works</h2>
-            <img src="./Normal Button/Tertiary/Icons/Img Placeholder.png" alt="Works-placeholder">
-            <h3>Multi-Post Stories</h3>
-            <p>A daily selections of privately personalized reads; no accounts or sign-ups required. Take your time and see the cool works I've done.</p>
-            <ul class="languages">
-                <li>CSS</li>
-                <li>HTML</li>
-                <li>Javascript</li>
-            </ul>
-            <a href=""><button type="button">See project</button></a>
-            <div class="works-container">
+            <div class="works-container0">
+                <img src="./Normal Button/Tertiary/Icons/Img Placeholder.png" alt="Works-placeholder">
+                <div>
+                    <h3>Multi-Post Stories</h3>
+                    <p>A daily selections of privately personalized reads; no accounts or sign-ups required. Take your time and see the cool works I've done.</p>
+                    <ul class="languages">
+                        <li>CSS</li>
+                        <li>HTML</li>
+                        <li>Javascript</li>
+                    </ul>
+                    <a href=""><button type="button">See project</button></a>
+                </div>
+            </div>
+            <div class="works-container" id="works-container">
                 <div class="works">
                     <h2>Calculator</h2>
                     <p>A simple calculator that can do the basics operations.</p>
@@ -111,27 +123,32 @@
             <a href=""><button>Get my resume</button></a>
             <hr>
             <div class="container2">
+                <div class="sub-container2">
+                    <span><i class="fa-sharp fa-solid fa-square first"></i><label for="ul">Language</label></span>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
                 <br>
-                <span><i class="fa-sharp fa-solid fa-square first"></i><label for="ul">Language</label></span>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                </ul>
+                <div class="sub-container2">
+                    <span><i class="fa-sharp fa-solid fa-square"></i><label for="ul">Frameworks</label></span>
+                    <ul>
+                        <li>React.js</li>
+                        <li>Ruby on Rails</li>
+                        <li>Rspec</li>
+                    </ul>
+                </div>
                 <br>
-                <span><i class="fa-sharp fa-solid fa-square"></i><label for="ul">Frameworks</label></span>
-                <ul>
-                    <li>React.js</li>
-                    <li>Ruby on Rails</li>
-                    <li>Rspec</li>
-                </ul>
-                <br>
-                <span><i class="fa-solid fa-circle"></i><label for="ul">Skills</label></span>
-                <ul>
-                    <li>Database Management</li>
-                    <li>Version Control</li>
-                    <li>Web Development</li>
-                </ul>
+                <div class="sub-container2">
+                    <span><i class="fa-solid fa-circle"></i><label for="ul">Skills</label></span>
+                    <ul>
+                        <li>Database Management</li>
+                        <li>Version Control</li>
+                        <li>Web Development</li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
