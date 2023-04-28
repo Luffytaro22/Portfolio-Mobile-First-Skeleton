@@ -1,15 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@200&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300&family=Meera+Inimai&family=Poppins:wght@200&family=Roboto&display=swap');
 
 * {
   max-width: 1300px;
+  color: #fff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 header {
@@ -22,6 +27,7 @@ header {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 /* Logotype */
@@ -119,7 +125,8 @@ ul {
   margin-bottom: 0;
 }
 
-.icons:hover {
+.icons:hover,
+button:hover {
   cursor: pointer;
 }
 
@@ -138,9 +145,259 @@ ul {
   flex: 1 1 auto;
 }
 
-a {
-  text-decoration: none;
-  color: white;
+/* works Section */
+#works {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 120px 24px;
+  gap: 12px;
+  position: absolute;
+  width: 375px;
+  height: 390px;
+  top: 2100px;
+  box-sizing: border-box;
+}
+
+#works h2,
+#works h3,
+#works p {
+  font-family: Crete Round, sans-serif;
+  font-weight: 400;
+  text-align: left;
+}
+
+#works h2 {
+  color: #1c1a19;
+  font-size: 40px;
+  line-height: 52px;
+  border-bottom: 1px solid #212121;
+  padding-bottom: 30px;
+}
+
+#works img {
+  width: 327px;
+  height: 237px;
+}
+
+#works h3 {
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+  margin-bottom: 0;
+}
+
+#works p {
+  margin-top: 0;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+  margin-bottom: 0;
+}
+
+#works .languages {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  column-gap: 10px;
+}
+
+#works .languages > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 12px;
+  width: 55px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #8993a4;
+  color: #091e42;
+}
+
+#works > a > button {
+  padding: 12px;
+  gap: 10px;
+  width: 124px;
+  height: 48px;
+  background: #ff6b00;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+}
+
+#works > .works-container {
+  display: grid;
+  grid-template-rows: repeat(6, 386px);
+  grid-template-columns: 327px;
+  row-gap: 20px;
+}
+
+#works > .works-container > .works {
+  background: url("./Normal Button/Tertiary/Icons/Img\ Placeholder\ \(1\).png");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#works > .works-container > .works > h2 {
+  font-family: Crete Round, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: left;
+  color: #fff;
+  padding: 0 10px;
+}
+
+#about-myself p {
+  flex: 1;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#works > .works-container > .works > p {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #fff;
+  padding: 0 12px;
+}
+
+#works > .works-container > .works > .lw {
+  padding-left: 12px;
+}
+
+#about-myself .container2 ul > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+}
+
+#works > .works-container > .works > .lw > * {
+  background-color: rgba(255, 255, 255, 0.24);
+  color: #fff;
+}
+
+#about-myself > a > button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 156px;
+  height: 48px;
+  background: #ff6b00;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  border: none;
+}
+
+#works > .works-container > .works > a > button {
+  width: 327px;
+  height: 48px;
+  background: #ff6b00;
+  border: none;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+}
+
+/* About Myself Section */
+#about-myself {
+  background: #1c1a19;
+  position: absolute;
+  height: 1601px;
+  width: 375px;
+  top: 3937px;
+  padding: 20px 24px;
+  background-image: url("./Normal Button/Tertiary/Icons/Frame.png");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 25%;
+}
+
+.container3 {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+
+#about-myself h1 {
+  flex: 1;
+  font-family: Crete Round, sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 88px;
+  letter-spacing: 0.3700000047683716px;
+  text-align: left;
+  color: #ff6b00;
+  margin-bottom: 0;
+}
+
+hr {
+  margin-top: 200px;
+}
+
+#about-myself .container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-myself .container2 > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-myself label {
+  font-family: InaiMathi, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  gap: 50px;
+}
+
+#about-myself .container2 i {
+  color: #ff6b00;
+  padding-right: 10px;
+}
+
+#about-myself .container2 .first {
+  transform: rotate(-45deg);
+}
+
+#about-myself .container2 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 @media only screen and (min-width: 375px) {
@@ -150,8 +407,14 @@ a {
     height: 15vw;
   }
 
-  #headline {
+  #headline,
+  #works,
+  #about-myself {
     width: 100%;
+  }
+
+  hr {
+    margin-top: 60vw;
   }
 }
 
@@ -162,7 +425,35 @@ a {
     height: 15vh;
   }
 
-  #headline {
+  #headline,
+  #works,
+  #about-myself {
     width: 100%;
+  }
+
+  #headline {
+    background-image: url("./Normal Button/Tertiary/Icons/Illustration-header.png");
+    background-size: 500px;
+  }
+
+  #works > .works-container {
+    grid-template-rows: repeat(3, 386px);
+    grid-template-columns: repeat(3, 327px);
+    gap: 10vw;
+  }
+
+  #works {
+    top: 100em;
+  }
+
+  #about-myself {
+    padding-left: 20px;
+    padding-right: 29px;
+    background-image: url("./Normal Button/Tertiary/Icons/Frame\ \(1\).png");
+    top: 150em;
+  }
+
+  hr {
+    margin-top: 60vh;
   }
 }
