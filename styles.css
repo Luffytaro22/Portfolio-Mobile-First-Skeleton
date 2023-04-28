@@ -423,6 +423,7 @@ hr {
   }
 }
 
+/* For screen sizes of at least 768px */
 @media only screen and (min-width: 768px) {
   header {
     width: 100%;
@@ -476,13 +477,19 @@ hr {
   }
 
   #works > .works-container {
-    grid-template-rows: repeat(3, 386px);
-    grid-template-columns: repeat(3, 327px);
-    gap: 10vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #works  div.works-container div.works > * {
+    width: 307px;
   }
 
   #works {
-    top: 100em;
+    top: 80em;
+    padding: 0 5vw;
   }
 
   #works div.works-container0 {
@@ -512,7 +519,7 @@ hr {
     padding-left: 20px;
     padding-right: 29px;
     background-image: url("./Normal Button/Tertiary/Icons/Frame\ \(1\).png");
-    top: 150em;
+    top: 145em;
   }
 
   hr {
