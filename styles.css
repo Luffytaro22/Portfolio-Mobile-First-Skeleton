@@ -222,6 +222,23 @@ button:hover {
   color: #091e42;
 }
 
+#about-myself > a > button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 156px;
+  height: 48px;
+  background: #ff6b00;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  border: none;
+}
+
 #works div.works-container0 a > button {
   padding: 12px;
   gap: 10px;
@@ -300,23 +317,6 @@ button:hover {
 #works > .works-container > .works > .lw > * {
   background-color: rgba(255, 255, 255, 0.24);
   color: #fff;
-}
-
-#about-myself > a > button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  gap: 10px;
-  width: 156px;
-  height: 48px;
-  background: #ff6b00;
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  border: none;
 }
 
 #works > .works-container > .works > a > button {
@@ -440,7 +440,7 @@ hr {
   }
 
   .menuHiden > * {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 17px;
@@ -483,7 +483,7 @@ hr {
     justify-content: space-between;
   }
 
-  #works  div.works-container div.works > * {
+  #works div.works-container div.works > * {
     width: 307px;
   }
 
