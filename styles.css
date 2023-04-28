@@ -331,7 +331,7 @@ button:hover {
 #about-myself {
   background: #1c1a19;
   position: absolute;
-  height: 1501px;
+  height: 1601px;
   width: 375px;
   top: 3937px;
   padding: 20px 24px;
@@ -436,10 +436,21 @@ hr {
     background-size: 500px;
   }
 
+  #works > .works-container {
+    grid-template-rows: repeat(3,386px);
+    grid-template-columns: repeat(3, 327px);
+    gap: 10vw;
+  }
+
+  #works {
+    top: 100em;
+  }
+
   #about-myself {
     padding-left: 20px;
     padding-right: 29px;
     background-image: url("./Normal Button/Tertiary/Icons/Frame\ \(1\).png");
+    top: 150em;
   }
 
   hr {
