@@ -30,6 +30,10 @@ ul {
   padding: 0;
 }
 
+.menuHiden {
+  display: none;
+}
+
 /* Logotype */
 .ulMenu li:first-child {
   display: flex;
@@ -423,6 +427,26 @@ hr {
     width: 100%;
     padding-right: 3em;
     height: 15vh;
+  }
+
+  .menuHiden {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+    gap: 50px;
+  }
+
+  .menuHiden > * {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  nav.nav-bar span.menu-icon {
+    display: none;
   }
 
   #headline,
