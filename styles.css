@@ -256,7 +256,8 @@ button:hover {
   padding: 0 10px;
 }
 
-#about-myself > p {
+#about-myself p {
+  flex: 1;
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -339,7 +340,14 @@ button:hover {
   background-position-y: 25%;
 }
 
-#about-myself > h1 {
+.container3 {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+
+#about-myself h1 {
+  flex: 1;
   font-family: Crete Round, sans-serif;
   font-size: 72px;
   font-weight: 400;
