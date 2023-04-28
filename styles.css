@@ -222,7 +222,7 @@ button:hover {
   color: #091e42;
 }
 
-#works > a > button {
+#works div.works-container0 a > button {
   padding: 12px;
   gap: 10px;
   width: 124px;
@@ -483,6 +483,29 @@ hr {
 
   #works {
     top: 100em;
+  }
+
+  #works div.works-container0 {
+    display: flex;
+    align-items: flex-start;
+    gap: 5vw;
+  }
+
+  #works div.works-container0 img {
+    flex: 1;
+    height: 70vh;
+    width: 10vw;
+  }
+
+  #works div.works-container0 div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #works div.works-container0 div h3 {
+    margin: 0;
   }
 
   #about-myself {
