@@ -203,11 +203,12 @@ button:hover {
 }
 
 #works .languages {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
   column-gap: 10px;
+}
+
+#works .languages > * {
+  float: left;
+  margin-right: 10px;
 }
 
 #works .languages > * {
