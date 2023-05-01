@@ -207,20 +207,16 @@ button:hover {
 }
 
 #works .languages > * {
-  float: left;
-  margin-right: 10px;
-}
-
-#works .languages > * {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 10px 12px;
   width: 55px;
   height: 40px;
   background: #fff;
   border: 1px solid #8993a4;
   color: #091e42;
+  float: left;
+  margin-right: 10px;
+  text-align: center;
+  overflow: hidden;
 }
 
 #about-myself > a > button {
