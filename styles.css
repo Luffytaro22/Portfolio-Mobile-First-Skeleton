@@ -234,7 +234,7 @@ button:hover {
   padding: 12px;
   width: 131px;
   height: 48px;
-  background: #FF6B00;
+  background: #ff6b00;
   color: white;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -312,7 +312,7 @@ button:hover {
 
 #form-container div p {
   color: #172b4d;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -499,7 +499,7 @@ textarea::placeholder {
 }
 
 textarea {
-  background-color:  #fbf8f7;
+  background-color: #fbf8f7;
   padding: 10px 5px;
   margin-top: 20px;
   height: 114px;
@@ -511,7 +511,7 @@ textarea:focus {
 }
 
 #form-container ul li:last-child {
-  display: flex; 
+  display: flex;
   justify-content: center;
 }
 
