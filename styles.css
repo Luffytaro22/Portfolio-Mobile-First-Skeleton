@@ -147,6 +147,10 @@ button:hover {
   font-size: 4vh;
 }
 
+#form-container ul li {
+  width: 100%;
+}
+
 #headline .icons li {
   flex: 1 1 auto;
 }
@@ -223,6 +227,23 @@ button:hover {
   color: #091e42;
 }
 
+#form-container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  width: 131px;
+  height: 48px;
+  background: #FF6B00;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  border: none;
+}
+
 #about-myself > a > button {
   display: flex;
   flex-direction: row;
@@ -287,6 +308,17 @@ button:hover {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+
+#form-container div p {
+  color: #172b4d;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  width: 327px;
 }
 
 #works > .works-container > .works > p {
@@ -400,6 +432,20 @@ hr {
   transform: rotate(-45deg);
 }
 
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#form-container > form ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
 #about-myself .container2 ul {
   display: flex;
   flex-direction: column;
@@ -419,31 +465,8 @@ hr {
   justify-content: center;
 }
 
-#form-container div p {
-  color: #172b4d;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  text-align: center;
-  width: 327px;
-}
-
 #form-container form {
   width: 327px;
-}
-
-#form-container > form ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  gap: 20px;
-}
-
-#form-container ul li {
-  width: 100%;
 }
 
 input,
@@ -451,7 +474,7 @@ textarea {
   width: 100%;
   background: none;
   border: none;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -492,35 +515,12 @@ textarea:focus {
   justify-content: center;
 }
 
-#form-container button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px;
-  width: 131px;
-  height: 48px;
-  background: #FF6B00;
-  color: white;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  border: none;
-}
-
 footer {
   position: absolute;
   top: 6500px;
   border-top: 1px solid #3c3a39;
   width: 100%;
   height: 100px;
-}
-
-footer ul {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
 }
 
 @media only screen and (min-width: 375px) {
