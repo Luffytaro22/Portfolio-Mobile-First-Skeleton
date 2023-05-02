@@ -405,6 +405,109 @@ hr {
   gap: 30px;
 }
 
+#form-container {
+  position: absolute;
+  top: 5700px;
+  height: 1001px;
+  width: 375px;
+  padding: 10px 20px;
+}
+
+#form-container div {
+  display: flex;
+  justify-content: center;
+}
+
+#form-container div p {
+  color: #172b4d;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  width: 327px;
+}
+
+#form-container form {
+  width: 327px;
+}
+
+#form-container > form ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+#form-container ul li {
+  width: 100%;
+}
+
+input,
+textarea {
+  width: 100%;
+  background: none;
+  border: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
+}
+
+input {
+  border-bottom: 1px solid #979493;
+  padding: 0 5px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+input:placeholder {
+  color: #979493;
+}
+
+textarea::placeholder {
+  font-style: italic;
+  color: #3c3a39;
+}
+
+textarea {
+  background-color:  #fbf8f7;
+  padding: 10px 5px;
+  margin-top: 20px;
+  height: 114px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+#form-container ul li:last-child {
+  display: flex; 
+  justify-content: center;
+}
+
+#form-container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  width: 131px;
+  height: 48px;
+  background: #FF6B00;
+  color: white;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  border: none;
+}
+
 @media only screen and (min-width: 375px) {
   header {
     width: 100%;
