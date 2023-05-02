@@ -666,4 +666,20 @@ footer ul {
   hr {
     margin-top: 60vh;
   }
+
+  #form-container {
+    top: 230em;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100vh;
+  }
+
+  #form-container div p {
+    text-align: left;
+  }
+
+  footer {
+    top: 260em;
+  }
 }
