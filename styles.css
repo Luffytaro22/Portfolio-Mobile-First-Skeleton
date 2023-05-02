@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: 100%;
 }
 
 a {
@@ -408,7 +409,7 @@ hr {
 #form-container {
   position: absolute;
   top: 5700px;
-  height: 901px;
+  height: 751px;
   width: 375px;
   padding: 10px 20px;
 }
