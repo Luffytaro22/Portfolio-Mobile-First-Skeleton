@@ -538,6 +538,15 @@ footer ul {
   hr {
     margin-top: 60vw;
   }
+
+  #form-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 350em;
+  }
 }
 
 /* For screen sizes of at least 768px */
