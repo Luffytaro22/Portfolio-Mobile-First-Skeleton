@@ -416,7 +416,7 @@ hr {
 #about-myself .container2 span {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 #about-myself label {
