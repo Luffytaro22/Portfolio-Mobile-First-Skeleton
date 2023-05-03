@@ -574,6 +574,12 @@ footer {
     display: none;
   }
 
+  .works:hover {
+    .hide {
+      display: block;
+    }
+  }
+
   .menuHiden {
     display: flex;
     justify-content: flex-end;
