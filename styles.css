@@ -719,11 +719,19 @@ footer {
   }
 
   #form-container {
-    top: 240em;
+    top: 250em;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
     height: 100vh;
+  }
+
+  #form-container div {
+    flex: 1;
+  }
+
+  #form-container form {
+    flex: 1;
   }
 
   #form-container div p {
@@ -731,6 +739,6 @@ footer {
   }
 
   footer {
-    top: 270em;
+    top: 280em;
   }
 }
