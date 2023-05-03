@@ -315,6 +315,18 @@ button:hover {
   line-height: 24px;
 }
 
+#about-myself h1 {
+  flex: 1;
+  font-family: Crete Round, sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 88px;
+  letter-spacing: 0.3700000047683716px;
+  text-align: left;
+  color: #ff6b00;
+  margin-bottom: 0;
+}
+
 #form-container div h1 {
   color: #172b4d;
   font-family: 'Inter', sans-serif;
@@ -388,18 +400,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   width: 360px;
-}
-
-#about-myself h1 {
-  flex: 1;
-  font-family: Crete Round, sans-serif;
-  font-size: 72px;
-  font-weight: 400;
-  line-height: 88px;
-  letter-spacing: 0.3700000047683716px;
-  text-align: left;
-  color: #ff6b00;
-  margin-bottom: 0;
 }
 
 hr {
@@ -632,17 +632,21 @@ footer {
     row-gap: 40px;
   }
 
+  #works .works {
+    height: 400px;
+  }
+
   #works .works:first-child {
     background-image: url("./Normal Button/Tertiary/Icons/Img\ Placeholder\ \(3\).png");
     background-size: 100%;
   }
 
-  #works .works {
-    height: 400px;
-  }
-
   #works div.works-container div.works {
     width: 340px;
+  }
+
+  #about-myself .container2 ul > * {
+    align-items: flex-start;
   }
 
   #works .works-container .works > * {
@@ -689,6 +693,11 @@ footer {
     width: 20vw;
   }
 
+  #form-container div {
+    flex: 1;
+    justify-content: flex-start;
+  }
+
   #works div.works-container0 div {
     flex: 1;
     display: flex;
@@ -717,10 +726,6 @@ footer {
     padding-top: 10vw;
   }
 
-  #about-myself .container2 ul > * {
-    align-items: flex-start;
-  }
-
   hr {
     margin-top: 60vh;
   }
@@ -733,11 +738,6 @@ footer {
     height: 70vh;
     padding: 0 1vw;
     gap: 30px;
-  }
-
-  #form-container div {
-    flex: 1;
-    justify-content: flex-start;
   }
 
   #form-container form {
