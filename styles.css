@@ -31,6 +31,10 @@ ul {
   padding: 0;
 }
 
+#hr-works {
+  display: none;
+}
+
 .menuHiden {
   display: none;
 }
@@ -633,7 +637,7 @@ footer {
   #works div.works-container0 img {
     flex: 1;
     height: 70vh;
-    width: 10vw;
+    width: 20vw;
   }
 
   #works div.works-container0 div {
