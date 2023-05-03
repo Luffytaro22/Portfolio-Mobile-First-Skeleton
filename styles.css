@@ -403,7 +403,7 @@ button:hover {
 }
 
 hr {
-  margin-top: 200px;
+  margin-top: 230px;
 }
 
 #about-myself .container2 {
@@ -537,7 +537,8 @@ footer {
 
   #headline,
   #works,
-  #about-myself {
+  #about-myself,
+  #form-container {
     width: 100%;
   }
 
@@ -590,7 +591,8 @@ footer {
 
   #headline,
   #works,
-  #about-myself {
+  #about-myself,
+  #form-container {
     width: 100%;
   }
 
