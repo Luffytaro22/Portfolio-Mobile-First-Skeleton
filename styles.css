@@ -695,7 +695,7 @@ footer {
 
   #about-myself {
     background-image: url("./Normal Button/Tertiary/Icons/Frame\ \(1\).png");
-    top: 145em;
+    top: 165em;
     height: 210vh;
   }
 
@@ -715,7 +715,7 @@ footer {
   }
 
   #form-container {
-    top: 230em;
+    top: 240em;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
@@ -727,6 +727,6 @@ footer {
   }
 
   footer {
-    top: 260em;
+    top: 270em;
   }
 }
