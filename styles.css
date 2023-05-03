@@ -293,6 +293,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  background-size: 100%;
 }
 
 #works > .works-container > .works > h2 {
@@ -357,7 +358,7 @@ button:hover {
 }
 
 #works > .works-container > .works > a > button {
-  width: 327px;
+  width: 100%;
   height: 48px;
   background: #ff6b00;
   border: none;
@@ -562,6 +563,11 @@ footer {
     height: 15vh;
   }
 
+  .hide,
+  .card-hide {
+    display: none;
+  }
+
   .menuHiden {
     display: flex;
     justify-content: flex-end;
@@ -588,6 +594,10 @@ footer {
     width: 100%;
   }
 
+  #works .works-container .works:first-child > ul {
+    display: none;
+  }
+
   #headline {
     background-image: url("./Normal Button/Tertiary/Icons/Illustration-header.png");
     background-size: 500px;
@@ -612,14 +622,28 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 40px;
   }
 
-  #works div.works-container div.works > * {
-    width: 307px;
+  #works .works:first-child {
+    background-image: url("./Normal Button/Tertiary/Icons/Img\ Placeholder\ \(3\).png");
+    background-size: 100%;
+  }
+
+  #works .works {
+    height: 400px;
+  }
+
+  #works div.works-container div.works {
+    width: 340px;
+  }
+
+  #works .works-container .works > * {
+    border: none;
   }
 
   #works {
-    top: 80em;
+    top: 90em;
     padding: 0 5vw;
   }
 
