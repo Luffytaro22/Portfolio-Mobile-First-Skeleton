@@ -574,10 +574,18 @@ footer {
     display: none;
   }
 
-  .works:hover {
-    .hide {
+  .works:hover .hide {
       display: block;
-    }
+  }
+
+  .works:hover h2,
+  .works:hover p,
+  #works .works-container .works:hover > ul {
+      display: none;
+  }
+
+  #works .works:hover {
+    background-image: url("./Normal Button/Tertiary/Icons/Img\ Placeholder\ \(3\).png");
   }
 
   .menuHiden {
