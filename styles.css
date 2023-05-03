@@ -623,15 +623,33 @@ footer {
     padding: 0 5vw;
   }
 
-  #works h2 {
-    width: 100%;
-    text-align: center;
-  }
-
   #works div.works-container0 {
     display: flex;
     align-items: flex-start;
     gap: 5vw;
+  }
+
+  #works div.works-container00 {
+    position: relative;
+    display: inline-block;
+    width: 90vw;
+  }
+
+  #works div.works-container00 h2 {
+    border: none;
+  }
+
+  #hr-works {
+    display: inline-block;
+    width: 60vw;
+    height: 1px;
+    margin: 0 10px;
+    vertical-align: middle;
+    position: absolute;
+    top: 43%;
+    left: 60vh;
+    transform: translateY(-50%);
+    border-top: 1px solid black;
   }
 
   #works div.works-container0 img {
