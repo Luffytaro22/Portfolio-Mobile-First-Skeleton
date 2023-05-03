@@ -315,7 +315,7 @@ button:hover {
   line-height: 24px;
 }
 
-#form-container div p {
+#form-container div h1 {
   color: #172b4d;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -721,9 +721,11 @@ footer {
   #form-container {
     top: 250em;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
-    height: 100vh;
+    height: 70vh;
+    padding: 0 1vw;
+    gap: 30px;
   }
 
   #form-container div {
@@ -733,14 +735,16 @@ footer {
 
   #form-container form {
     flex: 1;
+    padding-right: 5vw;
   }
 
-  #form-container div p {
+  #form-container div h1 {
     text-align: left;
     color: #262626;
     font-size: 40px;
     line-height: 52px;
     width: 100%;
+    padding-left: 5vw;
   }
 
   footer {
