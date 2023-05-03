@@ -710,6 +710,10 @@ footer {
     padding-top: 10vw;
   }
 
+  #about-myself .container2 ul > * {
+    align-items: flex-start;
+  }
+
   hr {
     margin-top: 60vh;
   }
