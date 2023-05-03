@@ -728,6 +728,7 @@ footer {
 
   #form-container div {
     flex: 1;
+    justify-content: flex-start;
   }
 
   #form-container form {
@@ -736,6 +737,10 @@ footer {
 
   #form-container div p {
     text-align: left;
+    color: #262626;
+    font-size: 40px;
+    line-height: 52px;
+    width: 100%;
   }
 
   footer {
