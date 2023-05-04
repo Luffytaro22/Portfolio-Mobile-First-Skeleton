@@ -563,6 +563,15 @@ footer {
 
 /* For screen sizes of at least 768px */
 @media only screen and (min-width: 768px) {
+  #works .works button[type="button"]:hover,
+  #works .works-container0 button:hover,
+  #about-myself button:hover,
+  #form-container form button:hover {
+    background-color: #fff5e1;
+    color: #f55800;
+    border: 1px solid #f55800;
+  }
+
   header {
     width: 100%;
     padding-right: 3em;
