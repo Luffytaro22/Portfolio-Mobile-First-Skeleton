@@ -569,8 +569,7 @@ footer {
     height: 15vh;
   }
 
-  .hide,
-  .card-hide {
+  .hide {
     display: none;
   }
 
@@ -615,10 +614,6 @@ footer {
     width: 100%;
   }
 
-  #works .works-container .works:first-child > ul {
-    display: none;
-  }
-
   #headline {
     background-image: url("./Normal Button/Tertiary/Icons/Illustration-header.png");
     background-size: 500px;
@@ -648,11 +643,6 @@ footer {
 
   #works .works {
     height: 435px;
-  }
-
-  #works .works:first-child {
-    background-image: url("./Normal Button/Tertiary/Icons/Img\ Placeholder\ \(3\).png");
-    background-size: 100%;
   }
 
   #works div.works-container div.works {
