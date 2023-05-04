@@ -38,7 +38,9 @@
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
+* Multiple Platform's Supportive.
+* Mobile First.
+* Modern and attractive Interface.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
@@ -77,6 +79,8 @@
 👤 **Manuel Sánchez**
 
 - GitHub: [@githubhandle](https://github.com/Luffytaro22)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/manuel-alejandro-sanchez-sierra-4b358b14a/)
+- Twitter: [@twitterhandle](https://twitter.com/Luffytaro_san22)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
