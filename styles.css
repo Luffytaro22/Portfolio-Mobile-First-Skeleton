@@ -563,20 +563,29 @@ footer {
 
 /* For screen sizes of at least 768px */
 @media only screen and (min-width: 768px) {
+  #about-myself button:disabled {
+    background-color: #f4f1f0;
+    color: #5b5957;
+  }
+
+  #about-myself button:hover {
+    background-color: #fff5e1;
+    color: #f55800;
+    border: 1px solid #f55800;
+  }
+
   #about-myself button:active,
   #form-container form button:active {
     background-color: #e05304;
     color: #fff5e1;
   }
-
-  #about-myself button:disabled,
+  
   #form-container form button:disabled {
     background-color: #f4f1f0;
     color: #5b5957;
   }
 
   #works .works button[type="button"]:hover,
-  #about-myself button:hover,
   #form-container form button:hover,
   #works .works-container0 button:hover {
     background-color: #fff5e1;
