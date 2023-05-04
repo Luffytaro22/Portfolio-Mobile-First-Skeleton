@@ -563,27 +563,35 @@ footer {
 
 /* For screen sizes of at least 768px */
 @media only screen and (min-width: 768px) {
-  #works .works button[type="button"]:hover,
-  #works .works-container0 button:hover,
-  #about-myself button:hover,
-  #form-container form button:hover {
-    background-color: #fff5e1;
-    color: #f55800;
-    border: 1px solid #f55800;
-  }
-
-  #works .works button[type="button"]:active,
-  #works .works-container0 button:active,
   #about-myself button:active,
   #form-container form button:active {
     background-color: #e05304;
     color: #fff5e1;
   }
 
-  #works .works button[type="button"]:disabled,
-  #works .works-container0 button:disabled,
   #about-myself button:disabled,
   #form-container form button:disabled {
+    background-color: #f4f1f0;
+    color: #5b5957;
+  }
+
+  #works .works button[type="button"]:hover,
+  #about-myself button:hover,
+  #form-container form button:hover,
+  #works .works-container0 button:hover {
+    background-color: #fff5e1;
+    color: #f55800;
+    border: 1px solid #f55800;
+  }
+
+  #works .works button[type="button"]:active,
+  #works .works-container0 button:active {
+    background-color: #e05304;
+    color: #fff5e1;
+  }
+
+  #works .works button[type="button"]:disabled,
+  #works .works-container0 button:disabled {
     background-color: #f4f1f0;
     color: #5b5957;
   }
@@ -599,13 +607,13 @@ footer {
   }
 
   .works:hover .hide {
-      display: block;
+    display: block;
   }
 
   .works:hover h2,
   .works:hover p,
   #works .works-container .works:hover > ul {
-      display: none;
+    display: none;
   }
 
   #works .works:hover {
@@ -666,12 +674,9 @@ footer {
     row-gap: 40px;
   }
 
-  #works .works {
-    height: 435px;
-  }
-
   #works div.works-container div.works {
     width: 369px;
+    height: 435px;
   }
 
   #about-myself .container2 ul > * {
