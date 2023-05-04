@@ -31,6 +31,10 @@ ul {
   padding: 0;
 }
 
+#hr-works {
+  display: none;
+}
+
 .menuHiden {
   display: none;
 }
@@ -289,6 +293,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  background-size: 100%;
 }
 
 #works > .works-container > .works > h2 {
@@ -310,7 +315,19 @@ button:hover {
   line-height: 24px;
 }
 
-#form-container div p {
+#about-myself h1 {
+  flex: 1;
+  font-family: Crete Round, sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 88px;
+  letter-spacing: 0.3700000047683716px;
+  text-align: left;
+  color: #ff6b00;
+  margin-bottom: 0;
+}
+
+#form-container div h1 {
   color: #172b4d;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -353,7 +370,7 @@ button:hover {
 }
 
 #works > .works-container > .works > a > button {
-  width: 327px;
+  width: 100%;
   height: 48px;
   background: #ff6b00;
   border: none;
@@ -385,20 +402,8 @@ button:hover {
   width: 360px;
 }
 
-#about-myself h1 {
-  flex: 1;
-  font-family: Crete Round, sans-serif;
-  font-size: 72px;
-  font-weight: 400;
-  line-height: 88px;
-  letter-spacing: 0.3700000047683716px;
-  text-align: left;
-  color: #ff6b00;
-  margin-bottom: 0;
-}
-
 hr {
-  margin-top: 200px;
+  margin-top: 230px;
 }
 
 #about-myself .container2 {
@@ -411,7 +416,7 @@ hr {
 #about-myself .container2 span {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 #about-myself label {
@@ -519,8 +524,8 @@ footer {
   position: absolute;
   top: 6500px;
   border-top: 1px solid #3c3a39;
-  width: 100%;
-  height: 100px;
+  width: 423px;
+  height: 60px;
 }
 
 @media only screen and (min-width: 375px) {
@@ -530,9 +535,15 @@ footer {
     height: 15vw;
   }
 
+  footer {
+    width: 100%;
+    padding-right: 3em;
+  }
+
   #headline,
   #works,
-  #about-myself {
+  #about-myself,
+  #form-container {
     width: 100%;
   }
 
@@ -552,10 +563,70 @@ footer {
 
 /* For screen sizes of at least 768px */
 @media only screen and (min-width: 768px) {
+  #about-myself button:disabled {
+    background-color: #f4f1f0;
+    color: #5b5957;
+  }
+
+  #about-myself button:hover {
+    background-color: #fff5e1;
+    color: #f55800;
+    border: 1px solid #f55800;
+  }
+
+  #about-myself button:active,
+  #form-container form button:active {
+    background-color: #e05304;
+    color: #fff5e1;
+  }
+
+  #form-container form button:disabled {
+    background-color: #f4f1f0;
+    color: #5b5957;
+  }
+
+  #works .works button[type="button"]:hover,
+  #form-container form button:hover,
+  #works .works-container0 button:hover {
+    background-color: #fff5e1;
+    color: #f55800;
+    border: 1px solid #f55800;
+  }
+
+  #works .works button[type="button"]:active,
+  #works .works-container0 button:active {
+    background-color: #e05304;
+    color: #fff5e1;
+  }
+
+  #works .works button[type="button"]:disabled,
+  #works .works-container0 button:disabled {
+    background-color: #f4f1f0;
+    color: #5b5957;
+  }
+
   header {
     width: 100%;
     padding-right: 3em;
     height: 15vh;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .works:hover .hide {
+    display: block;
+  }
+
+  .works:hover h2,
+  .works:hover p,
+  #works .works-container .works:hover > ul {
+    display: none;
+  }
+
+  #works .works:hover {
+    background-image: url("./Normal Button/Tertiary/Icons/Img\ Placeholder\ \(3\).png");
   }
 
   .menuHiden {
@@ -580,7 +651,8 @@ footer {
 
   #headline,
   #works,
-  #about-myself {
+  #about-myself,
+  #form-container {
     width: 100%;
   }
 
@@ -608,20 +680,25 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 40px;
   }
 
-  #works div.works-container div.works > * {
-    width: 307px;
+  #works div.works-container div.works {
+    width: 369px;
+    height: 435px;
+  }
+
+  #about-myself .container2 ul > * {
+    align-items: flex-start;
+  }
+
+  #works .works-container .works > * {
+    border: none;
   }
 
   #works {
-    top: 80em;
+    top: 90em;
     padding: 0 5vw;
-  }
-
-  #works h2 {
-    width: 100%;
-    text-align: center;
   }
 
   #works div.works-container0 {
@@ -630,10 +707,38 @@ footer {
     gap: 5vw;
   }
 
+  #works div.works-container00 {
+    position: relative;
+    display: inline-block;
+    width: 90vw;
+  }
+
+  #works div.works-container00 h2 {
+    border: none;
+  }
+
+  #hr-works {
+    display: inline-block;
+    width: 60vw;
+    height: 1px;
+    margin: 0 10px;
+    vertical-align: middle;
+    position: absolute;
+    top: 43%;
+    left: 60vh;
+    transform: translateY(-50%);
+    border-top: 1px solid black;
+  }
+
   #works div.works-container0 img {
     flex: 1;
     height: 70vh;
-    width: 10vw;
+    width: 20vw;
+  }
+
+  #form-container div {
+    flex: 1;
+    justify-content: flex-start;
   }
 
   #works div.works-container0 div {
@@ -649,7 +754,7 @@ footer {
 
   #about-myself {
     background-image: url("./Normal Button/Tertiary/Icons/Frame\ \(1\).png");
-    top: 145em;
+    top: 165em;
     height: 210vh;
   }
 
@@ -669,18 +774,30 @@ footer {
   }
 
   #form-container {
-    top: 230em;
+    top: 250em;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    height: 100vh;
+    height: 70vh;
+    padding: 0 1vw;
+    gap: 30px;
   }
 
-  #form-container div p {
+  #form-container form {
+    flex: 1;
+    padding-right: 5vw;
+  }
+
+  #form-container div h1 {
     text-align: left;
+    color: #262626;
+    font-size: 40px;
+    line-height: 52px;
+    width: 100%;
+    padding-left: 5vw;
   }
 
   footer {
-    top: 260em;
+    top: 280em;
   }
 }
