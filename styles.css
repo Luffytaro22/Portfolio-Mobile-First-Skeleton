@@ -572,6 +572,22 @@ footer {
     border: 1px solid #f55800;
   }
 
+  #works .works button[type="button"]:active,
+  #works .works-container0 button:active,
+  #about-myself button:active,
+  #form-container form button:active {
+    background-color: #e05304;
+    color: #fff5e1;
+  }
+
+  #works .works button[type="button"]:disabled,
+  #works .works-container0 button:disabled,
+  #about-myself button:disabled,
+  #form-container form button:disabled {
+    background-color: #f4f1f0;
+    color: #5b5957;
+  }
+
   header {
     width: 100%;
     padding-right: 3em;
