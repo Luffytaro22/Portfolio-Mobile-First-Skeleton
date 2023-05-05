@@ -837,3 +837,19 @@ input {
 input:hover {
   transform: translateX(2%);
 }
+
+.ulMenu img {
+  animation: logo;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes logo {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
