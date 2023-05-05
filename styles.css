@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300&family=Meera+Inimai&family=Poppins:wght@200&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300&family=Meera+Inimai&family=Poppins:wght@200&family=Roboto&display=swap");
 
 * {
   max-width: 1300px;
   color: #fff;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", sans-serif;
 }
 
 body {
@@ -97,7 +97,7 @@ ul {
 #headline h1 {
   width: 327px;
   height: 124px;
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -110,7 +110,7 @@ ul {
 #headline h3 {
   width: 327px;
   height: 27px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -125,7 +125,7 @@ ul {
 #headline p {
   width: 327px;
   height: 123px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -240,7 +240,7 @@ button:hover {
   height: 48px;
   background: #ff6b00;
   color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -272,7 +272,7 @@ button:hover {
   height: 48px;
   background: #ff6b00;
   border: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -329,7 +329,7 @@ button:hover {
 
 #form-container div h1 {
   color: #172b4d;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -357,7 +357,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -479,7 +479,7 @@ textarea {
   width: 100%;
   background: none;
   border: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -638,7 +638,7 @@ footer {
   }
 
   .menuHiden > * {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 17px;
@@ -800,4 +800,15 @@ footer {
   footer {
     top: 280em;
   }
+}
+
+/*add a transition to the hover state of the .icons and button elements: */
+.icons,
+button {
+  transition: transform 0.2s ease-in-out;
+}
+
+.icons:hover,
+button:hover {
+  transform: scale(1.1);
 }
