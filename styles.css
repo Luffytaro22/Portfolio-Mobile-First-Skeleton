@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300&family=Meera+Inimai&family=Poppins:wght@200&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300&family=Meera+Inimai&family=Poppins:wght@200&family=Roboto&display=swap");
 
 * {
   max-width: 1300px;
   color: #fff;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", sans-serif;
 }
 
 body {
@@ -51,6 +51,12 @@ ul {
   top: calc(50% - 44px / 2);
 }
 
+.ulMenu img {
+  animation: logo;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
 .ulMenu li:first-child img {
   width: 8vh;
   height: 8vh;
@@ -76,6 +82,12 @@ ul {
   font-size: 5vh;
 }
 
+/* add a transition to the hover state of the .icons and button elements */
+.icons,
+button {
+  transition: transform 0.2s ease-in-out;
+}
+
 #headline {
   background: #1c1a19;
   display: flex;
@@ -92,12 +104,16 @@ ul {
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 120%;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 #headline h1 {
   width: 327px;
   height: 124px;
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -110,7 +126,7 @@ ul {
 #headline h3 {
   width: 327px;
   height: 27px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -125,7 +141,7 @@ ul {
 #headline p {
   width: 327px;
   height: 123px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -137,6 +153,7 @@ ul {
 .icons:hover,
 button:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 #headline .icons {
@@ -240,7 +257,7 @@ button:hover {
   height: 48px;
   background: #ff6b00;
   color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -272,7 +289,7 @@ button:hover {
   height: 48px;
   background: #ff6b00;
   border: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -329,7 +346,7 @@ button:hover {
 
 #form-container div h1 {
   color: #172b4d;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -357,7 +374,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -479,7 +496,7 @@ textarea {
   width: 100%;
   background: none;
   border: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -492,6 +509,7 @@ input {
   padding: 0 5px;
   padding-top: 20px;
   padding-bottom: 10px;
+  transition: all 1s ease-in-out;
 }
 
 input:placeholder {
@@ -638,7 +656,7 @@ footer {
   }
 
   .menuHiden > * {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 17px;
@@ -799,5 +817,31 @@ footer {
 
   footer {
     top: 280em;
+  }
+}
+
+/* adding a fade-in animation to the #headline */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+input:hover {
+  transform: translateX(2%);
+}
+
+@keyframes logo {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
   }
 }
