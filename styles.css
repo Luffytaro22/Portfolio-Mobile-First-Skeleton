@@ -802,7 +802,7 @@ footer {
   }
 }
 
-/*add a transition to the hover state of the .icons and button elements: */
+/*add a transition to the hover state of the .icons and button elements */
 .icons,
 button {
   transition: transform 0.2s ease-in-out;
@@ -811,4 +811,21 @@ button {
 .icons:hover,
 button:hover {
   transform: scale(1.1);
+}
+
+/*adding a fade-in animation to the #headline */
+#headline {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
