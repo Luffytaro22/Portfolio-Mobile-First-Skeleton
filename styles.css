@@ -829,3 +829,11 @@ button:hover {
     opacity: 1;
   }
 }
+
+input {
+  transition: all 1s ease-in-out;
+}
+
+input:hover {
+  transform: translateX(2%);
+}
