@@ -51,6 +51,12 @@ ul {
   top: calc(50% - 44px / 2);
 }
 
+.ulMenu img {
+  animation: logo;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
 .ulMenu li:first-child img {
   width: 8vh;
   height: 8vh;
@@ -76,6 +82,12 @@ ul {
   font-size: 5vh;
 }
 
+/* add a transition to the hover state of the .icons and button elements */
+.icons,
+button {
+  transition: transform 0.2s ease-in-out;
+}
+
 #headline {
   background: #1c1a19;
   display: flex;
@@ -92,6 +104,10 @@ ul {
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 120%;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 #headline h1 {
@@ -137,6 +153,7 @@ ul {
 .icons:hover,
 button:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 #headline .icons {
@@ -492,6 +509,7 @@ input {
   padding: 0 5px;
   padding-top: 20px;
   padding-bottom: 10px;
+  transition: all 1s ease-in-out;
 }
 
 input:placeholder {
@@ -802,46 +820,20 @@ footer {
   }
 }
 
-/*add a transition to the hover state of the .icons and button elements */
-.icons,
-button {
-  transition: transform 0.2s ease-in-out;
-}
-
-.icons:hover,
-button:hover {
-  transform: scale(1.1);
-}
-
-/*adding a fade-in animation to the #headline */
-#headline {
-  opacity: 0;
-  animation-name: fadeIn;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
+/* adding a fade-in animation to the #headline */
 
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
 
-input {
-  transition: all 1s ease-in-out;
-}
-
 input:hover {
   transform: translateX(2%);
-}
-
-.ulMenu img {
-  animation: logo;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
 }
 
 @keyframes logo {
