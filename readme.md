@@ -55,19 +55,17 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
+### Prerequisites
+In order to run this project you need:
+* Internet connection.
+* Any device with a width of at least 375px.
+
 ### Setup
-
-
-### Install
-
-
-### Usage
-
-
-### Run tests
-
+Clone this repository to your desired folder: 
+`https://github.com/Luffytaro22/Portfolio-Mobile-First-Skeleton.git`
 
 ### Deployment
+You can deploy this project using: 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
