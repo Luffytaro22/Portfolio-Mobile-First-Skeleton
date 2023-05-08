@@ -61,7 +61,7 @@ In order to run this project you need:
 * Any device with a width of at least 375px.
 
 ### Setup
-Clone this repository to your desired folder: \n
+Clone this repository to your desired folder:
 `git clone https://github.com/Luffytaro22/Portfolio-Mobile-First-Skeleton.git`
 
 ### Deployment
