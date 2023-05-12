@@ -795,7 +795,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    height: 70vh;
+    height: 50vh;
     padding: 0 1vw;
     gap: 30px;
   }
