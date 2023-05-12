@@ -310,7 +310,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-size: 100%;
+  background-size: cover;
 }
 
 #works > .works-container > .works > h2 {
@@ -698,12 +698,11 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 40px;
   }
 
   #works div.works-container div.works {
-    width: 369px;
-    height: 435px;
+    width: min(369px, 40%);
+    height: 445px;
   }
 
   #about-myself .container2 ul > * {
