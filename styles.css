@@ -750,7 +750,7 @@ footer {
 
   #works div.works-container0 img {
     flex: 1;
-    height: 70vh;
+    height: auto;
     width: 20vw;
   }
 
