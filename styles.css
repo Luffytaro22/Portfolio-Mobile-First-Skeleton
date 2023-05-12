@@ -773,6 +773,7 @@ footer {
   #about-myself {
     background-image: url("./Normal Button/Tertiary/Icons/Frame\ \(1\).png");
     top: 165em;
+    height: auto;
   }
 
   #about-myself div.container3 {
