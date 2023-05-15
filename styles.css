@@ -545,6 +545,11 @@ footer {
 }
 
 @media only screen and (min-width: 375px) {
+  .mobile-menu {
+    display: block;
+    background-color: #3c3a39;
+  }
+
   header {
     width: 100%;
     padding-right: 3em;
