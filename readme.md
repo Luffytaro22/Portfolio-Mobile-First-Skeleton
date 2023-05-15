@@ -85,7 +85,9 @@ You can deploy this project using: [This Link](https://luffytaro22.github.io/Por
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
+* A pop-up for the menu.
+* A more optimized display.
+* More readable CSS code.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
