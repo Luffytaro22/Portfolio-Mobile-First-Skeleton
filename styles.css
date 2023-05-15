@@ -55,23 +55,6 @@ ul {
   font-size: 20px;
 }
 
-#mobile-menu ul li {
-  border-bottom: 1px solid #6f6c6b;
-  padding-top: 20px;
-  text-align: left;
-  color: #fff5E1;
-  padding-bottom: 10px;
-}
-
-#mobile-menu ul li a {
-  font-family: 'Inter', sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 44px;
-  letter-spacing: 0em;
-  padding-left: 10px;
-}
-
 /* Logotype */
 .ulMenu li:first-child {
   display: flex;
@@ -82,6 +65,23 @@ ul {
   height: 44px;
   left: 5%;
   top: calc(50% - 44px / 2);
+}
+
+#mobile-menu ul li {
+  border-bottom: 1px solid #6f6c6b;
+  padding-top: 20px;
+  text-align: left;
+  color: #fff5e1;
+  padding-bottom: 10px;
+}
+
+#mobile-menu ul li a {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0;
+  padding-left: 10px;
 }
 
 .ulMenu img {
@@ -734,7 +734,7 @@ footer {
   }
 
   #works div.works-container div.works {
-    width: min(369px, 40%);
+    width: 330px;
     height: 445px;
   }
 

@@ -14,4 +14,4 @@ function hideMenu() {
 hamburguer.addEventListener('click', showMenu);
 x.addEventListener('click', hideMenu);
 
-mobileItems.forEach(item => item.addEventListener('click', hideMenu));
+mobileItems.forEach((item) => item.addEventListener('click', hideMenu));
