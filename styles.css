@@ -31,10 +31,41 @@ ul {
   padding: 0;
 }
 
-#mobile-menu,
+
 #hr-works,
 .menuHiden {
   display: none;
+}
+
+#mobile-menu {
+  background-color: #3c3a39;
+  height: 100%;
+  width: 90%;
+  z-index: 5;
+  position: fixed;
+  padding: 20px 20px;
+}
+
+#x {
+  display: block;
+  text-align: right;
+  color: #67798e;
+}
+
+#mobile-menu ul {
+  font-family: Inter, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff5E1;
+}
+
+#mobile-menu li {
+  border-bottom: 1px solid #6f6c6b;
+  padding-top: 20px;
+
 }
 
 /* Logotype */
@@ -547,7 +578,6 @@ footer {
 @media only screen and (min-width: 375px) {
   .mobile-menu {
     display: block;
-    background-color: #3c3a39;
   }
 
   header {
