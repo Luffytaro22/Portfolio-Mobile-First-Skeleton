@@ -6,4 +6,9 @@ function showMenu() {
   mobileMenu.style = 'display: block;';
 }
 
+function hideMenu() {
+  mobileMenu.style = 'display: none;';
+}
+
 hamburguer.addEventListener('click', showMenu);
+x.addEventListener('click', hideMenu);
