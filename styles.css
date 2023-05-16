@@ -419,7 +419,7 @@ button:hover {
   color: #fff;
 }
 
-#works > .works-container > .works > a > button {
+#works > .works-container > .works button {
   width: 100%;
   height: 48px;
   background: #ff6b00;
