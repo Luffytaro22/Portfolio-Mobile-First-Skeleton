@@ -292,7 +292,8 @@ button:hover {
   text-align: left;
 }
 
-#works h2 {
+#works .works-container00 h2,
+#works-container h2 {
   color: #1c1a19;
   font-size: 40px;
   line-height: 52px;
