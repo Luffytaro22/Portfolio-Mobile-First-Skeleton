@@ -42,7 +42,7 @@ ul {
   background-color: white;
   position: fixed;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
   height: 90%;
   z-index: 10;
   top: 5%;
@@ -79,9 +79,10 @@ ul {
   border: 1px solid #3c3a39;
 }
 
-#pop-up > img {
+#pop-up > div > img {
   width: 100%;
   height: 220px;
+  box-sizing: border-box;
 }
 
 #pop-up p {
@@ -91,6 +92,7 @@ ul {
   line-height: 24px;
   color: #344563;
   padding: 10px 0;
+  box-sizing: border-box;
 }
 
 #pop-up-buttons {
@@ -695,6 +697,50 @@ footer {
 
 /* For screen sizes of at least 768px */
 @media only screen and (min-width: 768px) {
+  #pop-up {
+    padding-bottom: 20px;
+  }
+
+  #pop-up p {
+    padding-top: 0;
+  }
+
+  #pop-up h2 {
+    margin-bottom: 0;
+  }
+
+  #pop-up i {
+    left: 95%;
+  }
+
+  #pop-up > div > img {
+    width: 50%;
+    max-height: 420px;
+    height: 90%;
+  }
+
+  #pop-up > div {
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+  }
+
+  #pop-up > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+  }
+
+  #pop-up-buttons {
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  #pop-up-buttons button {
+    width: 10rem;
+  }
+
   #about-myself button:disabled {
     background-color: #f4f1f0;
     color: #5b5957;
