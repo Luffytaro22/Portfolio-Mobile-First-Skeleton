@@ -38,6 +38,62 @@ ul {
   display: none;
 }
 
+#pop-up {
+  background-color: white;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 343px;
+  height: 718px;
+  z-index: 10;
+}
+
+#pop-up h2 {
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+#pop-up ul li {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #3c3a39;
+}
+
+#pop-up img {
+  width: 311px;
+  height: 220px;
+}
+
+#pop-up p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #344563;
+}
+
+#pop-up-buttons {
+  display: flex;
+}
+
+#pop-up-buttons button {
+  width: 129px;
+  height: 48px;
+  background: #FF6B00;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  display: flex;
+}
+
 #mobile-menu {
   background-color: #3c3a39;
   height: 100%;
