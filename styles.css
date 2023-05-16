@@ -59,6 +59,13 @@ ul {
   border: none;
 }
 
+#pop-up i {
+  position: absolute;
+  left: 90%;
+  color: grey;
+  top: 5%;
+}
+
 #pop-up ul li {
   font-family: Poppins;
   font-size: 13px;
