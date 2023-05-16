@@ -76,7 +76,7 @@ ul {
   border: 1px solid #3c3a39;
 }
 
-#pop-up img {
+#pop-up > img {
   width: 100%;
   height: 220px;
 }
@@ -97,7 +97,7 @@ ul {
 }
 
 #pop-up-buttons button {
-  width: 129px;
+  width: 159px;
   height: 48px;
   background: #FF6B00;
   font-family: 'Inter';
@@ -106,10 +106,11 @@ ul {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  display: flex;
   border: none;
+  display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
 #mobile-menu {
