@@ -121,9 +121,11 @@ projects.forEach((project) => {
   let aSource = document.createElement('a');
   let buttonLive = document.createElement('button');
   let buttonSource = document.createElement('button');
+  let i = document.createElement('i');
 
   /* Assign properties */
   ul.classList.add("languages");
+  i.classList.add("fa-solid", "fa-x");
   div.id = "pop-up-buttons";
   img.src = project.image;
 
@@ -149,6 +151,7 @@ projects.forEach((project) => {
 
   /* Append to the container */
   popUp.appendChild(h2);
+  popUp.appendChild(i);
   popUp.appendChild(ul);
   popUp.appendChild(img);
   popUp.appendChild(p);
