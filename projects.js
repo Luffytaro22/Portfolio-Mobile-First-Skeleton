@@ -69,6 +69,7 @@ projects.forEach((project) => {
   h2.textContent = project.name;
   p.textContent = project.description;
   button.textContent = "See Project";
+  button.name = project.name;
 
   /* Create li's, added the languages and append them to the ul element */
   for(let i = 0; i < 3; i++) {
@@ -86,3 +87,20 @@ projects.forEach((project) => {
   /* Append the div to the container */
   worksContainer.appendChild(div);
 });
+
+/* The container for the pop up */
+let popUp = document.getElementById('pop-up');
+let buttons = document.querySelectorAll('button[class="hide"]');
+
+/* A function that determines if the clicked button is the one of the project's name */
+function selectPopUp(e) {
+  projects.forEach((project) => {
+    if(project.name === e.target.name) {
+      popUp.style.display = "block";
+      return;
+    }
+  });
+}
+
+/* A click listener to each project's button */
+buttons.forEach((button) => button.addEventListener('click', selectPopUp));
