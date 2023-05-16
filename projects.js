@@ -24,7 +24,7 @@ let projects = [
     sourceLink: "https://github.com/Luffytaro22/Calculator"
   },
   {
-    name: "Etch-A-Aketch",
+    name: "Etch-A-Sketch",
     description: "A recreation of the Etch-A-Sketch interactive dashboard where you can select the quantity of spaces and the colors.",
     image: "./Images/etch-a-sketch.png",
     languages: ["HTML", "CSS", "Javascript"],
