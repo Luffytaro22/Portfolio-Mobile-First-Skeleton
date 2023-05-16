@@ -123,6 +123,7 @@ projects.forEach((project) => {
   let buttonSource = document.createElement('button');
 
   /* Assign properties */
+  ul.classList.add("languages");
   div.id = "pop-up-buttons";
   img.src = project.image;
 
