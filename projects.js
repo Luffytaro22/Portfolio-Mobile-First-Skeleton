@@ -107,6 +107,7 @@ function selectPopUp(event) {
   let img = document.createElement('img');
   let p = document.createElement('p');
   let div = document.createElement('div'); //The buttons container.
+  let divContainer = document.createElement('div'); //div container for the p and the buttons div container.
   let aLive = document.createElement('a');
   let aSource = document.createElement('a');
   let buttonLive = document.createElement('button');
@@ -150,8 +151,9 @@ function selectPopUp(event) {
   popUp.appendChild(i);
   popUp.appendChild(ul);
   popUp.appendChild(img);
-  popUp.appendChild(p);
-  popUp.appendChild(div);
+  divContainer.appendChild(p);
+  divContainer.appendChild(div);
+  popUp.appendChild(divContainer);
 
   /* Change the display of the div container */
   popUp.style.display = "flex";
@@ -165,8 +167,7 @@ function selectPopUp(event) {
     popUp.removeChild(i);
     popUp.removeChild(ul);
     popUp.removeChild(img);
-    popUp.removeChild(p);
-    popUp.removeChild(div);
+    popUp.removeChild(divContainer);
     div.remove();
   }
 }
