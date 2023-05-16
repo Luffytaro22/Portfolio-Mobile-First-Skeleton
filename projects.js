@@ -167,6 +167,7 @@ function selectPopUp(event) {
     popUp.removeChild(img);
     popUp.removeChild(p);
     popUp.removeChild(div);
+    div.remove();
   }
 }
 
