@@ -68,6 +68,7 @@ projects.forEach((project) => {
   /* Assign values to the elements */
   h2.textContent = project.name;
   p.textContent = project.description;
+  button.textContent = "See Project";
 
   /* Create li's, added the languages and append them to the ul element */
   for(let i = 0; i < 3; i++) {
