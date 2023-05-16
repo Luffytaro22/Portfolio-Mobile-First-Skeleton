@@ -48,6 +48,9 @@ ul {
   top: 5%;
   left: 5%;
   padding: 0 20px;
+  animation-name: pop-up;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
 }
 
 #pop-up h2 {
@@ -957,5 +960,15 @@ input:hover {
 
   to {
     transform: rotateY(360deg);
+  }
+}
+
+@keyframes pop-up {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
   }
 }
