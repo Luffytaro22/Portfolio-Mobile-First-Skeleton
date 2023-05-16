@@ -96,7 +96,7 @@ let buttons = document.querySelectorAll('button[class="hide"]');
 function selectPopUp(e) {
   projects.forEach((project) => {
     if(project.name === e.target.name) {
-      popUp.style.display = "block";
+      popUp.style.display = "flex";
       return;
     }
   });
