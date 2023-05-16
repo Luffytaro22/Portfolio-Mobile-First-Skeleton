@@ -41,7 +41,7 @@ let projects = [
   },
   {
     name: "Form Page",
-    decription: "A form page that collects user info with a nice-looking design",
+    description: "A form page that collects user info with a nice-looking design",
     image: "Images\form-page.png",
     languages: ["HTML", "CSS", "Javascript"],
     liveLink: "https://luffytaro22.github.io/Sign-Up_form/",
