@@ -65,6 +65,8 @@ ul {
   font-weight: 600;
   line-height: 16px;
   color: #3c3a39;
+  padding: 10px 20px;
+  border: 1px solid #3c3a39;
 }
 
 #pop-up img {
@@ -78,10 +80,13 @@ ul {
   font-weight: 400;
   line-height: 24px;
   color: #344563;
+  padding: 10px 0;
 }
 
 #pop-up-buttons {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #pop-up-buttons button {
@@ -95,6 +100,9 @@ ul {
   line-height: 24px;
   letter-spacing: 0.03em;
   display: flex;
+  border: none;
+  align-items: center;
+  justify-content: center;
 }
 
 #mobile-menu {
@@ -332,7 +340,7 @@ button:hover {
   column-gap: 10px;
 }
 
-#works .languages > * {
+#works-container .languages > * {
   display: flex;
   align-items: center;
   justify-content: center;
