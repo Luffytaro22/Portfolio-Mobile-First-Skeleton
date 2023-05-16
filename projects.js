@@ -49,7 +49,7 @@ let projects = [
   }
 ];
 /* The container for the projects */
-let worksContainer = document.querySelector('#works-container');
+var worksContainer = document.getElementById('works-container');
 
 projects.forEach((project) => {
   /* Create the elements */
@@ -57,12 +57,13 @@ projects.forEach((project) => {
   let h2 = document.createElement('h2');
   let p = document.createElement('p');
   let ul = document.createElement('ul');
-  let button = document.createElement('button[type="button"]');
+  let button = document.createElement('button');
 
   /* Assign classes */
   div.classList.add('works');
-  ul.classList.add('lw languages');
+  ul.classList.add('lw', 'languages');
   button.classList.add('hide');
+  button.type = "button";
 
   /* Assign values to the elements */
   h2.textContent = project.name;
