@@ -53,6 +53,12 @@ ul {
   animation-timing-function: ease-in-out;
 }
 
+.works-container00 h2 {
+  font-family: Crete Round, sans-serif;
+  font-weight: 400;
+  text-align: left;
+}
+
 #pop-up h2 {
   font-family: Roboto, sans-serif;
   font-size: 32px;
@@ -112,16 +118,16 @@ ul {
   border-radius: 5px 5px 0 5px;
 }
 
-#works-container img,
-#works .works-container0 img {
-  width: 327px;
-  height: 237px;
-}
-
 #pop-up > div > img {
   width: 100%;
   height: 220px;
   box-sizing: border-box;
+}
+
+#works-container img,
+#works .works-container0 img {
+  width: 327px;
+  height: 237px;
 }
 
 #pop-up p {
@@ -320,7 +326,6 @@ button:hover {
   box-sizing: border-box;
 }
 
-.works-container00 h2,
 #works-container h2,
 #works p {
   font-family: Crete Round, sans-serif;

@@ -46,10 +46,10 @@ const projects = [
     languages: ['HTML', 'CSS', 'Javascript'],
     liveLink: 'https://luffytaro22.github.io/Sign-Up_form/',
     sourceLink: 'https://github.com/Luffytaro22/Sign-Up_form',
-  }
+  },
 ];
 /* The container for the projects */
-let worksContainer = document.getElementById('works-container');
+const worksContainer = document.getElementById('works-container');
 
 projects.forEach((project) => {
   /* Create the elements */
@@ -175,9 +175,7 @@ function selectPopUp(event) {
     divContainer.remove();
     div.remove();
   }
-
   i.addEventListener('click', closeProject);
-
 }
 
 /* A click listener to each project's button */
