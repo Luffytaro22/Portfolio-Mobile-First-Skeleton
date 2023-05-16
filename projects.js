@@ -121,7 +121,7 @@ projects.forEach((project) => {
   let aSource = document.createElement('a');
   let buttonLive = document.createElement('button');
   let buttonSource = document.createElement('button');
-  let i = document.createElement('i');
+  var i = document.createElement('i');
   let imgLive = document.createElement('img');
   let imgSource = document.createElement('img');
 
@@ -162,4 +162,10 @@ projects.forEach((project) => {
   popUp.appendChild(img);
   popUp.appendChild(p);
   popUp.appendChild(div);
+
+  i.addEventListener('click', closeProject);
 });
+
+function closeProject() {
+  popUp.style = "display: none;";
+}
