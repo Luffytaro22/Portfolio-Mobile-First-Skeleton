@@ -122,12 +122,16 @@ projects.forEach((project) => {
   let buttonLive = document.createElement('button');
   let buttonSource = document.createElement('button');
   let i = document.createElement('i');
+  let imgLive = document.createElement('img');
+  let imgSource = document.createElement('img');
 
   /* Assign properties */
   ul.classList.add("languages");
   i.classList.add("fa-solid", "fa-x");
   div.id = "pop-up-buttons";
   img.src = project.image;
+  imgLive.src = "./Normal Button/open-link.png";
+  imgSource.src = "./Normal Button/github-white.png";
 
   aLive.href = project.liveLink;
   aLive.target = "_blank";
@@ -145,7 +149,9 @@ projects.forEach((project) => {
 
   /* Append elements */
   aLive.appendChild(buttonLive);
+  buttonLive.appendChild(imgLive);
   aSource.appendChild(buttonSource);
+  buttonSource.appendChild(imgSource);
   div.appendChild(aLive);
   div.appendChild(aSource);
 
