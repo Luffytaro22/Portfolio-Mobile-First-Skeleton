@@ -118,8 +118,7 @@ ul {
   border-radius: 5px 5px 0 5px;
 }
 
-#works-container img,
-#works .works-container0 img {
+#works-container img {
   width: 327px;
   height: 237px;
 }
@@ -128,6 +127,11 @@ ul {
   width: 100%;
   height: 220px;
   box-sizing: border-box;
+}
+
+#works .works-container0 img {
+  width: 327px;
+  height: 237px;
 }
 
 #pop-up p {
