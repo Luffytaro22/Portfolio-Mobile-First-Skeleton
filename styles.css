@@ -54,12 +54,17 @@ ul {
 }
 
 #pop-up h2 {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
   color: #172b4d;
   border: none;
+}
+
+.nav-bar i {
+  color: white;
+  font-size: 5vh;
 }
 
 #pop-up i {
@@ -73,14 +78,44 @@ ul {
   cursor: pointer;
 }
 
+/* Logotype */
+.ulMenu li:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  width: 94px;
+  height: 44px;
+  left: 5%;
+  top: calc(50% - 44px / 2);
+}
+
 #pop-up ul li {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-size: 13px;
   font-weight: 600;
   line-height: 16px;
   color: #3c3a39;
   padding: 10px 20px;
   border: 1px solid #3c3a39;
+}
+
+.ulMenu img {
+  animation: logo;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.ulMenu li:first-child img {
+  width: 8vh;
+  height: 8vh;
+  border-radius: 5px 5px 0 5px;
+}
+
+#works-container img,
+#works .works-container0 img {
+  width: 327px;
+  height: 237px;
 }
 
 #pop-up > div > img {
@@ -90,13 +125,25 @@ ul {
 }
 
 #pop-up p {
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #344563;
   padding: 10px 0;
   box-sizing: border-box;
+}
+
+/* add a transition to the hover state of the .icons and button elements */
+.icons,
+button {
+  transition: transform 0.2s ease-in-out;
+}
+
+.icons:hover,
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 #pop-up-buttons {
@@ -107,8 +154,8 @@ ul {
 
 #pop-up-buttons button {
   height: 48px;
-  background: #FF6B00;
-  font-family: 'Inter';
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -139,18 +186,6 @@ ul {
   font-size: 20px;
 }
 
-/* Logotype */
-.ulMenu li:first-child {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: absolute;
-  width: 94px;
-  height: 44px;
-  left: 5%;
-  top: calc(50% - 44px / 2);
-}
-
 #mobile-menu ul li {
   border-bottom: 1px solid #6f6c6b;
   padding-top: 20px;
@@ -168,18 +203,6 @@ ul {
   padding-left: 10px;
 }
 
-.ulMenu img {
-  animation: logo;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-}
-
-.ulMenu li:first-child img {
-  width: 8vh;
-  height: 8vh;
-  border-radius: 5px 5px 0 5px;
-}
-
 /* Icon Menu */
 .nav-bar .menu-icon {
   display: flex;
@@ -192,17 +215,6 @@ ul {
   right: 24px;
   top: calc(50% - 40px / 2);
   border-radius: 8px;
-}
-
-.nav-bar i {
-  color: white;
-  font-size: 5vh;
-}
-
-/* add a transition to the hover state of the .icons and button elements */
-.icons,
-button {
-  transition: transform 0.2s ease-in-out;
 }
 
 #headline {
@@ -240,6 +252,12 @@ button {
   margin-bottom: 10px;
 }
 
+.works-container0 h3 {
+  font-family: Crete Round, sans-serif;
+  font-weight: 400;
+  text-align: left;
+}
+
 #headline h3 {
   width: 327px;
   height: 27px;
@@ -265,12 +283,6 @@ button {
   line-height: 24px;
   color: #fff;
   margin-bottom: 0;
-}
-
-.icons:hover,
-button:hover {
-  cursor: pointer;
-  transform: scale(1.1);
 }
 
 #headline .icons {
@@ -308,28 +320,21 @@ button:hover {
   box-sizing: border-box;
 }
 
-#works-container h2,
 .works-container00 h2,
-.works-container0 h3,
+#works-container h2,
 #works p {
   font-family: Crete Round, sans-serif;
   font-weight: 400;
   text-align: left;
 }
 
-#works .works-container00 h2,
-#works-container h2 {
+#works-container h2,
+#works .works-container00 h2 {
   color: #1c1a19;
   font-size: 40px;
   line-height: 52px;
   border-bottom: 1px solid #212121;
   padding-bottom: 30px;
-}
-
-#works .works-container0 img,
-#works-container img {
-  width: 327px;
-  height: 237px;
 }
 
 #works h3 {
