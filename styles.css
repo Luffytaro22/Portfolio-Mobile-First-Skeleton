@@ -284,8 +284,9 @@ button:hover {
   box-sizing: border-box;
 }
 
-#works h2,
-#works h3,
+#works-container h2,
+.works-container00 h2,
+.works-container0 h3,
 #works p {
   font-family: Crete Round, sans-serif;
   font-weight: 400;
