@@ -695,8 +695,7 @@ footer {
   }
 }
 
-/* For screen sizes of at least 768px */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
   #pop-up {
     padding-bottom: 20px;
   }
@@ -738,9 +737,12 @@ footer {
   }
 
   #pop-up-buttons button {
-    width: 10rem;
+    width: 8rem;
   }
+}
 
+/* For screen sizes of at least 768px */
+@media only screen and (min-width: 768px) {
   #about-myself button:disabled {
     background-color: #f4f1f0;
     color: #5b5957;
