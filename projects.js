@@ -93,25 +93,15 @@ let popUp = document.getElementById('pop-up');
 let buttons = document.querySelectorAll('button[class="hide"]');
 
 /* A function that determines if the clicked button is the one of the project's name */
-function selectPopUp(e) {
-  projects.forEach((project) => {
-    if(project.name === e.target.name) {
-      popUp.style.display = "flex";
-      return;
-    }
-  });
-}
+function selectPopUp(event) {
+  let index = projects.findIndex((project) => project.name === event.target.name);
 
-/* A click listener to each project's button */
-buttons.forEach((button) => button.addEventListener('click', selectPopUp));
-
-projects.forEach((project) => {
   /* Create the elements of the pop-up */
   let h2 = document.createElement('h2');
   let ul = document.createElement('ul');
   for(let i = 0; i < 3; i++) {
     let li = document.createElement('li');
-    li.textContent = project.languages[i];
+    li.textContent = projects[index].languages[i];
     ul.appendChild(li);
   }
   let img = document.createElement('img');
@@ -129,21 +119,21 @@ projects.forEach((project) => {
   ul.classList.add("languages");
   i.classList.add("fa-solid", "fa-x");
   div.id = "pop-up-buttons";
-  img.src = project.image;
+  img.src = projects[index].image;
   imgLive.src = "./Normal Button/open-link.png";
   imgSource.src = "./Normal Button/github-white.png";
 
-  aLive.href = project.liveLink;
+  aLive.href = projects[index].liveLink;
   aLive.target = "_blank";
   aLive.rel = "noopener";
 
-  aSource.href = project.sourceLink;
+  aSource.href = projects[index].sourceLink;
   aSource.target = "_blank";
   aSource.rel = "noopener";
 
   /* Assign text to the elements. */
-  h2.textContent = project.name;
-  p.textContent = project.description;
+  h2.textContent = projects[index].name;
+  p.textContent = projects[index].description;
   buttonLive.textContent = 'See Live';
   buttonSource.textContent = 'See Source';
 
@@ -163,9 +153,24 @@ projects.forEach((project) => {
   popUp.appendChild(p);
   popUp.appendChild(div);
 
-  i.addEventListener('click', closeProject);
-});
+  /* Change the display of the div container */
+  popUp.style.display = "flex";
 
-function closeProject() {
-  popUp.style = "display: none;";
+  /* A click listener to the "x" icon */
+  i.addEventListener('click', closeProject);
+
+  function closeProject() {
+    popUp.style = "display: none;";
+    popUp.removeChild(h2);
+    popUp.removeChild(i);
+    popUp.removeChild(ul);
+    popUp.removeChild(img);
+    popUp.removeChild(p);
+    popUp.removeChild(div);
+  }
 }
+
+/* A click listener to each project's button */
+buttons.forEach((button) => button.addEventListener('click', selectPopUp));
+
+
