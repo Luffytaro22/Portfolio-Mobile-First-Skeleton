@@ -69,6 +69,10 @@ ul {
   top: 5%;
 }
 
+#pop-up i:hover {
+  cursor: pointer;
+}
+
 #pop-up ul li {
   font-family: Poppins;
   font-size: 13px;
