@@ -165,17 +165,16 @@ function selectPopUp(event) {
   divContainer0.appendChild(divContainer);
   popUp.appendChild(divContainer0);
 
-  /* Change the display of the div container */
+  /* Change the blur of the body */
   header.classList.add('blur-effect');
   sections.forEach((section) => {
     section.classList.add('blur-effect');
   });
   footer.classList.add('blur-effect');
-
-  popUp.style.display = 'flex';
-  /* Change the blur of the body */
   
-
+  /* Change the display of the div container */
+  popUp.style.display = 'flex';
+  
   /* A click listener to the "x" icon */
   function closeProject() {
     popUp.style = 'display: none;';
