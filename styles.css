@@ -367,7 +367,7 @@ button:hover {
   margin-bottom: 0;
 }
 
-#works .languages {
+.languages {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
