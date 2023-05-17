@@ -8,8 +8,9 @@
     <link rel="icon" href="./Normal Button/Tertiary/Icons/web.png">
     <title>Portfolio Skeleton</title>
     <script src="https://kit.fontawesome.com/5211805414.js" crossorigin="anonymous"></script>
-    <script src="mobile-menu.js" defer></script>
+    <script src="mobile-menu.js" defer></script> <!-- Mobile Menu -->
     <script src="projects.js" defer></script> <!-- The projects cards -->
+    <script src="form.js" defer></script> <!-- Form validation -->
 </head>
 <body>
     <header>
@@ -110,16 +111,18 @@
             <div id="form-pargrah">
                 <h1>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h1>
             </div>
-            <form action="https://formspree.io/f/xknaybwq" method="post">
+            <form action="https://formspree.io/f/xknaybwq" method="post" novalidate>
                 <ul>
                     <li>
-                        <input  name="name" type="text" placeholder="Full name" maxlength="30" required>           
+                        <input  name="name" type="text" placeholder="Full name" maxlength="30" required> 
+                        <span class="error" id="user"></span> 
                     </li>
                     <li>
-                        <input name="email"  type="email" placeholder="Email address" required>           
+                        <input name="email"  type="email" placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                        <span class="error" id="mail"></span>        
                     </li>
                     <li>
-                        <textarea name="text" id="" maxlength="500" required placeholder="Write me something..."></textarea>
+                        <textarea name="text" id="" maxlength="500" placeholder="Write me something..."></textarea>
                     </li>
                     <li>
                         <button type="submit"> Get in touch</button>
