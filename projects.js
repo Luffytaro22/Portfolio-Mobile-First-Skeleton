@@ -143,7 +143,7 @@ function selectPopUp(event) {
   buttonSource.textContent = 'See Source';
 
   /* Add more text if the window is too wide */
-  if (window.innerWidth >= 768) {
+  if (window.innerWidth >= 1024) {
     p.textContent = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, molestias sit similique quas quasi, voluptas laboriosam aspernatur exercitationem reprehenderit dolorem adipisci laborum illum. Vitae quae itaque nesciunt! Necessitatibus, voluptatem a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, molestias sit similique quas quasi, voluptas laboriosam aspernatur exercitationem reprehenderit dolorem adipisci laborum illum. Vitae quae itaque nesciunt! Necessitatibus, voluptatem a.';
   }
 
