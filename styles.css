@@ -39,7 +39,7 @@ ul {
 }
 
 .blur-effect {
-  filter: blur(1px);
+  filter: blur(3px);
   pointer-events: none;
 }
 
