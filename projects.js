@@ -117,7 +117,8 @@ function selectPopUp(event) {
   const imgLive = document.createElement('img');
   const imgSource = document.createElement('img');
   const header = document.querySelector('header');
-  const headline = document.querySelector('#headline');
+  const sections = document.querySelectorAll('section');
+  const footer = document.querySelector('footer');
 
   /* Assign properties */
   ul.classList.add('languages');
@@ -166,7 +167,11 @@ function selectPopUp(event) {
 
   /* Change the display of the div container */
   header.classList.add('blur-effect');
-  headline.classList.add('blur-effect');
+  sections.forEach((section) => {
+    section.classList.add('blur-effect');
+  });
+  footer.classList.add('blur-effect');
+
   popUp.style.display = 'flex';
   /* Change the blur of the body */
   
@@ -181,7 +186,10 @@ function selectPopUp(event) {
     divContainer.remove();
     div.remove();
     header.classList.remove('blur-effect');
-    headline.classList.remove('blur-effect');
+    sections.forEach((section) => {
+      section.classList.remove('blur-effect');
+    });
+    footer.classList.remove('blur-effect');
   }
   i.addEventListener('click', closeProject);
 }
