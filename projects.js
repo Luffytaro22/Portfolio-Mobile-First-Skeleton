@@ -171,10 +171,10 @@ function selectPopUp(event) {
     section.classList.add('blur-effect');
   });
   footer.classList.add('blur-effect');
-  
+
   /* Change the display of the div container */
   popUp.style.display = 'flex';
-  
+
   /* A click listener to the "x" icon */
   function closeProject() {
     popUp.style = 'display: none;';
