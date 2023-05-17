@@ -116,6 +116,8 @@ function selectPopUp(event) {
   const i = document.createElement('i');
   const imgLive = document.createElement('img');
   const imgSource = document.createElement('img');
+  const header = document.querySelector('header');
+  const headline = document.querySelector('#headline');
 
   /* Assign properties */
   ul.classList.add('languages');
@@ -163,7 +165,11 @@ function selectPopUp(event) {
   popUp.appendChild(divContainer0);
 
   /* Change the display of the div container */
+  header.classList.add('blur-effect');
+  headline.classList.add('blur-effect');
   popUp.style.display = 'flex';
+  /* Change the blur of the body */
+  
 
   /* A click listener to the "x" icon */
   function closeProject() {
@@ -174,6 +180,8 @@ function selectPopUp(event) {
     popUp.removeChild(divContainer0);
     divContainer.remove();
     div.remove();
+    header.classList.remove('blur-effect');
+    headline.classList.remove('blur-effect');
   }
   i.addEventListener('click', closeProject);
 }
