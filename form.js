@@ -1,6 +1,6 @@
 const form = document.querySelector('form');
 const email = document.querySelector('input[type="email"]');
-const user = document.querySelector('input[type="text"]')
+const user = document.querySelector('input[type="text"]');
 const spanMail = document.querySelector('#mail');
 const spanUser = document.querySelector('#user');
 
@@ -11,7 +11,7 @@ function showErrorMail() {
     spanMail.textContent = '* Please enter a value.';
   } else if (email.value !== email.value.toLowerCase()) {
     /* If the input is not in lower case */
-    spanMail.textContent = '* Only enter characters in lower case.'
+    spanMail.textContent = '* Only enter characters in lower case.';
   } else if (email.validity.typeMismatch) {
     /* If the input is not an email type */
     spanMail.textContent = '* Please enter a valid email.';
@@ -59,4 +59,4 @@ form.addEventListener('submit', (event) => {
     showErrorMail();
     event.preventDefault();
   }
-})
+});
