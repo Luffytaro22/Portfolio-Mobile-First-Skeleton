@@ -1,6 +1,6 @@
 /* Referencing the name and email input values */
 const inputs = document.querySelectorAll('input');
-const imput = document.querySelector('imput');
+const imput = document.querySelector('input');
 /* if the localStorage object is not empty then pre-fill the inputs with the 'form' string */
 if (localStorage.length !== 0) {
   document.querySelector('input[name="name"]').value = JSON.parse(localStorage.getItem('form')).name;
@@ -23,3 +23,4 @@ function changeInput() {
 
 /* An input listener to each input (name and email) */
 inputs.forEach((input) => input.addEventListener('input', changeInput));
+imput.addEventListener('click', true);
