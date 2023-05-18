@@ -1,7 +1,7 @@
 /* Referencing the name and email input values */
 const inputs = document.querySelectorAll('input');
 
-/* if the localStorage object is not empty then put the values of the 'form' string into the inputs */
+/* if the localStorage object is not empty then pre-fill the inputs with the 'form' string */
 if (localStorage.length !== 0) {
   document.querySelector('input[name="name"]').value = JSON.parse(localStorage.getItem('form')).name;
   document.querySelector('input[name="email"]').value = JSON.parse(localStorage.getItem('form')).email;
