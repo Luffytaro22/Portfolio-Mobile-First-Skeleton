@@ -28,4 +28,3 @@ function changeInput() {
 /* An input listener to each input (name and email) */
 inputs.forEach((input) => input.addEventListener('input', changeInput));
 imput.addEventListener('input', changeInput);
-
