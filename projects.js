@@ -16,12 +16,12 @@ const projects = [
     sourceLink: 'https://github.com/Luffytaro22/Calculator',
   },
   {
-    name: 'Calculator',
-    description: 'A simple calculator that can do the basics operations.',
-    image: './Images/calculator.png',
+    name: 'Japanese Culture Festival',
+    description: 'Based on a layout of a conference web page with the thematic of a Japanese Culture Festival.',
+    image: './Images/Japan-festival.png',
     languages: ['HTML', 'CSS', 'Javascript'],
-    liveLink: 'https://luffytaro22.github.io/Calculator/',
-    sourceLink: 'https://github.com/Luffytaro22/Calculator',
+    liveLink: 'https://luffytaro22.github.io/Capstone-Japan/',
+    sourceLink: 'https://github.com/Luffytaro22/Capstone-Japan',
   },
   {
     name: 'Etch-A-Sketch',
