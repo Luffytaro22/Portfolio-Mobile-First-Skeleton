@@ -8,12 +8,12 @@ const projects = [
     sourceLink: 'https://github.com/Luffytaro22/Calculator',
   },
   {
-    name: 'Calculator',
-    description: 'A simple calculator that can do the basics operations.',
-    image: './Images/calculator.png',
+    name: 'Library',
+    description: 'A small library app that allows to add and remove books.',
+    image: './Images/library.png',
     languages: ['HTML', 'CSS', 'Javascript'],
-    liveLink: 'https://luffytaro22.github.io/Calculator/',
-    sourceLink: 'https://github.com/Luffytaro22/Calculator',
+    liveLink: 'https://luffytaro22.github.io/Library/',
+    sourceLink: 'https://github.com/Luffytaro22/Library',
   },
   {
     name: 'Japanese Culture Festival',
