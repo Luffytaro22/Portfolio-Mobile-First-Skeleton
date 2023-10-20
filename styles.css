@@ -31,6 +31,14 @@ ul {
   padding: 0;
 }
 
+main,
+header,
+footer,
+section,
+form {
+  width: 100%;
+}
+
 #mobile-menu,
 #pop-up,
 #hr-works,
@@ -250,8 +258,6 @@ button:hover {
   padding: 120px 24px;
   gap: 12px;
   position: absolute;
-  width: 375px;
-  height: 390px;
   top: 48px;
   background-image: url("./Normal Button/Tertiary/Icons/background-image.png");
   background-repeat: no-repeat;

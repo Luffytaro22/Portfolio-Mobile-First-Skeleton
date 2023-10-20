@@ -1,19 +1,19 @@
 const projects = [
   {
-    name: 'Calculator',
-    description: 'A simple calculator that can do the basics operations.',
-    image: './Images/calculator.png',
-    languages: ['HTML', 'CSS', 'Javascript'],
-    liveLink: 'https://luffytaro22.github.io/Calculator/',
-    sourceLink: 'https://github.com/Luffytaro22/Calculator',
+    name: 'Recipe App',
+    description: 'The Recipe App is a web application build on Ruby on Rails that allows you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe.',
+    image: './Images/recipe-app.png',
+    languages: ['Ruby', 'RoR', 'Javascript'],
+    liveLink: 'https://recipe-app-zxdn.onrender.com/',
+    sourceLink: 'https://github.com/Luffytaro22/Recipe-app',
   },
   {
-    name: 'Library',
-    description: 'A small library app that allows to add and remove books.',
-    image: './Images/library.png',
-    languages: ['HTML', 'CSS', 'Javascript'],
-    liveLink: 'https://luffytaro22.github.io/Library/',
-    sourceLink: 'https://github.com/Luffytaro22/Library',
+    name: 'Budget App',
+    description: 'The Budget App is a mobile web application build on Ruby on Rails where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    image: './Images/budget-app.png',
+    languages: ['Ruby', 'RoR', 'Javascript'],
+    liveLink: 'https://budget-app-8wpl.onrender.com/',
+    sourceLink: 'https://github.com/Luffytaro22/Budget-app',
   },
   {
     name: 'Japanese Culture Festival',
@@ -24,28 +24,28 @@ const projects = [
     sourceLink: 'https://github.com/Luffytaro22/Capstone-Japan',
   },
   {
-    name: 'Etch-A-Sketch',
-    description: 'A recreation of the Etch-A-Sketch interactive dashboard where you can select the quantity of spaces and the colors.',
-    image: './Images/etch-a-sketch.png',
+    name: 'Todo list',
+    description: 'To Do List allows the user to enter a task and mark it as completed or not. It also lets removing the done tasks and save them in the local storage.',
+    image: './Images/Todolist.png',
     languages: ['HTML', 'CSS', 'Javascript'],
-    liveLink: 'https://luffytaro22.github.io/Etch-A-Sketch/',
-    sourceLink: 'https://github.com/Luffytaro22/Etch-A-Sketch',
+    liveLink: 'https://luffytaro22.github.io/To-do-list/',
+    sourceLink: 'https://github.com/Luffytaro22/To-do-list',
   },
   {
-    name: 'Rock-Paper-Scissors',
-    description: 'The global-popular game against the computer. Will you be winner or the losser? Try it out!',
-    image: './Images/rock-paper-scissors.png',
+    name: 'TV Shows',
+    description: 'TV Shows is a an application that fetches tv shows from TVMaze API and also has a feature of posting and fetching Likes, Comments and Reservations from an involvement API.',
+    image: './Images/TVshows.png',
     languages: ['HTML', 'CSS', 'Javascript'],
-    liveLink: 'https://luffytaro22.github.io/Rock-Paper-Scissors/',
-    sourceLink: 'https://github.com/Luffytaro22/Rock-Paper-Scissors"',
+    liveLink: 'https://demesameneshoa.github.io/JavaScript-Capstone/',
+    sourceLink: 'https://github.com/Luffytaro22/JavaScript-Capstone"',
   },
   {
-    name: 'Form Page',
-    description: 'A form page that collects user info with a nice-looking design',
-    image: './Images/form-page.png',
-    languages: ['HTML', 'CSS', 'Javascript'],
-    liveLink: 'https://luffytaro22.github.io/Sign-Up_form/',
-    sourceLink: 'https://github.com/Luffytaro22/Sign-Up_form',
+    name: 'Countries App',
+    description: 'Countries Webapp makes use of Geography API to display information about the population at each continent, country and more detailed information about a specific country.',
+    image: './Images/countries-app.png',
+    languages: ['React', 'Redux', 'Javascript'],
+    liveLink: 'https://countries-webapp.vercel.app/',
+    sourceLink: 'https://github.com/Luffytaro22/countries-webapp',
   },
 ];
 /* The container for the projects */
@@ -141,11 +141,6 @@ function selectPopUp(event) {
   p.textContent = projects[index].description;
   buttonLive.textContent = 'See Live';
   buttonSource.textContent = 'See Source';
-
-  /* Add more text if the window is too wide */
-  if (window.innerWidth >= 1024) {
-    p.textContent = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, molestias sit similique quas quasi, voluptas laboriosam aspernatur exercitationem reprehenderit dolorem adipisci laborum illum. Vitae quae itaque nesciunt! Necessitatibus, voluptatem a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, molestias sit similique quas quasi, voluptas laboriosam aspernatur exercitationem reprehenderit dolorem adipisci laborum illum. Vitae quae itaque nesciunt! Necessitatibus, voluptatem a.';
-  }
 
   /* Append elements */
   aLive.appendChild(buttonLive);
